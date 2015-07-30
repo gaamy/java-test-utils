@@ -1,0 +1,233 @@
+;2;java.util.Map<java.lang.String,java.lang.String>;Graph
+org.jgrapht.graph.SubgraphTest;0
+org.jgrapht.graph.DirectedWeightedMultigraph;2;EdgeFactory;java.lang.Class<? extends E>
+org.jgrapht.graph.SimpleDirectedWeightedGraph;2;EdgeFactory;java.lang.Class<? extends E>
+org.jgrapht.traverse.TopologicalOrderIterator;6;T;E;V;DirectedGraph;java.util.Map<V,org.jgrapht.traverse.ModifiableInteger>;java.util.Queue<V>
+org.jgrapht.experimental.alg.color.BrownBacktrackColoring;2;java.util.Map<V,java.lang.Object>;Graph
+org.jgrapht.graph.SimpleGraph;2;EdgeFactory;java.lang.Class<? extends E>
+org.jgrapht.graph.UndirectedWeightedSubgraph;3;java.util.Set<E>;java.util.Set<V>;WeightedGraph
+org.jgrapht.experimental.GraphTests;1;Graph
+org.jgrapht.GraphHelper;0
+org.jgrapht.alg.RankingPathElementList;5;E;V;RankingPathElement;Graph;org.jgrapht.alg.RankingPathElementList<V,E>
+org.jgrapht.graph.AsWeightedGraph;3;java.util.Map<E,java.lang.Double>;E;Graph
+org.jgrapht.event.VertexTraversalEvent;2;V;java.lang.Object
+org.jgrapht.alg.NeighborIndexTest;0
+org.jgrapht.graph.DefaultDirectedWeightedGraph;2;EdgeFactory;java.lang.Class<? extends E>
+org.jgrapht.graph.MaskVertexSet;3;MaskFunctor;java.lang.Object;java.util.Set<V>
+org.jgrapht.traverse.AbstractGraphIteratorTest;4;VertexTraversalEvent;DirectedGraph;EdgeTraversalEvent;ConnectedComponentTraversalEvent
+org.jgrapht.generate.WeightedGraphGeneratorAdapter;5;VertexFactory;java.util.Map<java.lang.String,T>;Graph;double[][];WeightedGraph
+org.jgrapht.event.EdgeTraversalEvent;2;E;java.lang.Object
+org.jgrapht.alg.KShortestPathsIterator;4;E;V;Graph;java.util.Set<V>
+org.jgrapht.util.PrefetchIterator;1;org.jgrapht.util.PrefetchIterator.NextElementFunctor<E>
+org.jgrapht.experimental.alg.IntArrayGraphAlgorithm;1;Graph
+org.jgrapht.alg.BellmanFordShortestPathTest;1;Graph
+org.jgrapht.generate.HyperCubeGraphGenerator;3;VertexFactory;java.util.Map<java.lang.String,V>;Graph
+org.jgrapht.alg.cycle.TiernanSimpleCycles;1;DirectedGraph
+org.jgrapht.graph.UndirectedSubgraph;4;V;java.util.Set<E>;UndirectedGraph;java.util.Set<V>
+org.jgrapht.graph.DefaultEdge;0
+org.jgrapht.alg.HopcroftKarpBipartiteMatchingTest;0
+org.jgrapht.graph.DefaultWeightedEdge;0
+org.jgrapht.alg.KruskalMinimumSpanningTree;2;E;Graph
+org.jgrapht.graph.DirectedGraphUnion;3;V;WeightCombiner;DirectedGraph
+org.jgrapht.experimental.isomorphism.IsomorphismRelation;4;E;V;Graph;java.util.List<V>
+org.jgrapht.generate.SimpleWeightedGraphMatrixGenerator;4;VertexFactory;java.util.Map<java.lang.String,V>;java.util.List<V>;WeightedGraph
+org.jgrapht.alg.cycle.SzwarcfiterLauerSimpleCycles;2;V;DirectedGraph
+org.jgrapht.alg.KShortestPathCostTest;2;Graph;java.util.List<org.jgrapht.alg.GraphPath>
+org.jgrapht.alg.KSPExampleGraph;0
+org.jgrapht.alg.StoerWagnerMinimumCut;3;org.jgrapht.alg.StoerWagnerMinimumCut<V,E>.VertexAndWeight;UndirectedGraph;java.util.Set<V>
+org.jgrapht.generate.CompleteGraphGenerator;3;VertexFactory;java.util.Map<java.lang.String,V>;Graph
+org.jgrapht.graph.ClassBasedEdgeFactory;2;V;java.lang.Class<? extends E>
+org.jgrapht.experimental.isomorphism.IntegerVertexFactory;0
+org.jgrapht.alg.EulerianCircuit;1;UndirectedGraph
+org.jgrapht.alg.StrongConnectivityInspector;4;V;org.jgrapht.alg.StrongConnectivityInspector.VertexData<V>;DirectedGraph;java.util.Set<V>
+org.jgrapht.alg.KShortestPaths;3;V;RankingPathElement;Graph
+org.jgrapht.alg.BiconnectivityInspector;2;V;UndirectedGraph
+org.jgrapht.graph.ParanoidGraph;5;T;java.util.Set<T>;E;V;Graph
+org.jgrapht.experimental.isomorphism.EquivalenceIsomorphismInspector;6;EquivalenceComparator;java.lang.Object[];Graph;java.util.Set;java.util.Set<V>;EquivalenceSet[]
+org.jgrapht.traverse.AllTraverseTests;0
+org.jgrapht.alg.VertexCoversTest;2;Graph;java.util.Set<java.lang.Integer>
+org.jgrapht.util.TypeUtil;2;java.lang.Object;org.jgrapht.util.TypeUtil<T>
+org.jgrapht.traverse.DepthFirstIterator;3;E;V;Graph
+org.jgrapht.experimental.permutation.CompoundPermutationIter;1;int[]
+org.jgrapht.alg.EdmondsKarpMaximumFlow;3;E;V;DirectedGraph
+org.jgrapht.alg.KSPDiscardsValidPathsTest;1;WeightedMultigraph
+org.jgrapht.alg.cycle.DirectedSimpleCyclesTest;1;DirectedSimpleCycles
+org.jgrapht.alg.BiconnectivityInspectorTest;0
+org.jgrapht.generate.StarGraphGenerator;3;VertexFactory;java.util.Map<java.lang.String,V>;Graph
+org.jgrapht.alg.util.UnionFind;2;T;java.util.Set<T>
+org.jgrapht.alg.BellmanFordPathElement;4;E;V;Graph;org.jgrapht.alg.BellmanFordPathElement<V,E>
+org.jgrapht.alg.KShortestPathCompleteGraph5;0
+org.jgrapht.alg.KShortestPathCompleteGraph6;0
+org.jgrapht.alg.NotBiconnectedGraph;0
+org.jgrapht.experimental.equivalence.EquivalenceGroupCreatorTest;1;EquivalenceComparator
+org.jgrapht.experimental.GraphReader;4;VertexFactory;java.util.Map<java.lang.String,V>;Graph;java.io.Reader
+org.jgrapht.experimental.dag.DirectedAcyclicGraph;11;E;V;org.jgrapht.experimental.dag.DirectedAcyclicGraph.TopoOrderMappingFactory<V>;java.util.Collection<? extends V>;org.jgrapht.experimental.dag.DirectedAcyclicGraph.Region;java.lang.Class<? extends E>;java.lang.Integer;java.util.Set<V>;org.jgrapht.experimental.dag.DirectedAcyclicGraph.TopoOrderMapping<V>;org.jgrapht.experimental.dag.DirectedAcyclicGraph.VisitedFactory;org.jgrapht.experimental.dag.DirectedAcyclicGraph.Visited
+org.jgrapht.alg.CycleDetector;4;E;V;DirectedGraph;java.util.Set<V>
+org.jgrapht.generate.ScaleFreeGraphGenerator;3;VertexFactory;java.util.Map<java.lang.String,V>;Graph
+org.jgrapht.EnhancedTestCase;0
+org.jgrapht.alg.TransitiveClosureTest;0
+org.jgrapht.generate.RandomGraphGenerator;5;VertexFactory;java.util.Map<java.lang.String,V>;java.util.Random;java.util.Map<java.lang.Integer,VV>;Graph
+org.jgrapht.alg.MinSourceSinkCutTest;0
+org.jgrapht.experimental.PartiteRandomGraphGenerator;4;VertexFactory;int[];java.util.Map<java.lang.String,java.lang.Object[]>;Graph
+org.jgrapht.graph.AsUnweightedDirectedGraph;2;E;DirectedGraph
+org.jgrapht.graph.DefaultDirectedGraph;2;EdgeFactory;java.lang.Class<? extends E>
+org.jgrapht.alg.DirectedNeighborIndex;4;V;GraphVertexChangeEvent;DirectedGraph;GraphEdgeChangeEvent
+org.jgrapht.alg.EdmondsKarpMaximumFlowTest;2;double[];int[]
+org.jgrapht.event.ConnectedComponentTraversalEvent;1;java.lang.Object
+org.jgrapht.traverse.ClosestFirstIterator;3;E;V;Graph
+org.jgrapht.experimental.isomorphism.IsomorphismInspectorTest;2;EquivalenceComparator;Graph[]
+org.jgrapht.alg.BronKerboschCliqueFinderTest;1;Graph
+org.jgrapht.experimental.RandomGraphHelper;3;VertexFactory;java.util.List;Graph
+org.jgrapht.alg.cycle.JohnsonSimpleCycles;3;V;java.lang.Integer;DirectedGraph
+org.jgrapht.graph.UnmodifiableGraph;5;E;V;java.util.Collection<? extends V>;java.util.Collection<? extends E>;Graph
+org.jgrapht.experimental.equivalence.EquivalenceSet;4;EquivalenceComparator;E;java.lang.Object;C
+org.jgrapht.graph.IntrusiveEdge;0
+org.jgrapht.alg.HopcroftKarpBipartiteMatching;5;java.util.Map<V,java.util.Set<V>>;V;java.util.LinkedList<V>;UndirectedGraph;java.util.Set<V>
+org.jgrapht.alg.KShortestPathCompleteGraph4;0
+org.jgrapht.util.FibonacciHeapNode;1;T
+org.jgrapht.generate.RandomGraphGeneratorTest;1;java.util.List<org.jgrapht.generate.Graph<java.lang.Integer,org.jgrapht.generate.DefaultEdge>>
+org.jgrapht.alg.BellmanFordShortestPath;2;V;Graph
+org.jgrapht.alg.KuhnMunkresMinimalWeightBipartitePerfectMatchingTest;3;java.lang.Object;org.jgrapht.alg.KuhnMunkresMinimalWeightBipartitePerfectMatchingTest.V;double[][]
+org.jgrapht.traverse.TopologicalOrderIteratorTest;0
+org.jgrapht.traverse.DepthFirstIteratorTest;1;DirectedGraph
+org.jgrapht.graph.UnmodifiableDirectedGraph;1;DirectedGraph
+org.jgrapht.graph.AsWeightedGraphTest;0
+org.jgrapht.alg.BellmanFordIterator;5;E;V;BellmanFordPathElement;Graph;java.util.List<V>
+org.jgrapht.experimental.isomorphism.comparators.Mod3GroupComparator;2;java.lang.Object;java.lang.Integer
+org.jgrapht.graph.ListenableDirectedGraph;2;java.lang.Class<? extends E>;DirectedGraph
+org.jgrapht.alg.ConnectivityInspector;7;VertexTraversalEvent;V;GraphVertexChangeEvent;DirectedGraph;UndirectedGraph;ConnectedComponentTraversalEvent;GraphEdgeChangeEvent
+org.jgrapht.util.MathUtil;0
+org.jgrapht.experimental.GraphReaderTest;0
+org.jgrapht.util.FibonacciHeap;2;org.jgrapht.util.FibonacciHeap<T>;FibonacciHeapNode
+org.jgrapht.graph.DirectedWeightedSubgraph;3;java.util.Set<E>;java.util.Set<V>;WeightedGraph
+org.jgrapht.generate.LinearGraphGenerator;3;VertexFactory;java.util.Map<java.lang.String,V>;Graph
+org.jgrapht.graph.SimpleDirectedGraph;2;EdgeFactory;java.lang.Class<? extends E>
+org.jgrapht.event.GraphChangeEvent;1;java.lang.Object
+org.jgrapht.alg.HamiltonianCycleTest;0
+org.jgrapht.graph.GraphUnion;4;E;V;G;WeightCombiner
+org.jgrapht.util.ModifiableInteger;2;org.jgrapht.util.ModifiableInteger;java.lang.Object
+org.jgrapht.alg.RankingPathElement;4;E;V;Graph;org.jgrapht.alg.RankingPathElement<V,E>
+org.jgrapht.graph.GraphDelegator;3;E;V;Graph
+org.jgrapht.graph.DirectedMaskSubgraph;2;MaskFunctor;DirectedGraph
+org.jgrapht.experimental.equivalence.EquivalenceComparatorChainBase;3;E;EquivalenceComparator;C
+org.jgrapht.graph.Multigraph;2;EdgeFactory;java.lang.Class<? extends E>
+org.jgrapht.graph.AsUnweightedGraphTest;2;Graph;WeightedGraph
+org.jgrapht.util.VertexPair;2;V;java.lang.Object
+org.jgrapht.alg.VertexCovers;2;Graph;UndirectedGraph
+org.jgrapht.event.GraphVertexChangeEvent;2;V;java.lang.Object
+org.jgrapht.Graphs;7;E;GraphPath;V;java.util.Collection<? extends V>;java.util.Collection<? extends E>;Graph;DirectedGraph
+org.jgrapht.alg.cycle.UndirectedCycleBaseTest;1;UndirectedCycleBase
+org.jgrapht.traverse.BreadthFirstIterator;3;E;V;Graph
+org.jgrapht.alg.AbstractPathElement;4;E;org.jgrapht.alg.AbstractPathElement<V,E>;V;Graph
+org.jgrapht.experimental.isomorphism.GraphOrdering;5;java.lang.Object;Graph;java.util.Set<E>;java.util.Set<V>;org.jgrapht.experimental.isomorphism.GraphOrdering
+org.jgrapht.graph.DirectedPseudograph;2;EdgeFactory;java.lang.Class<? extends E>
+org.jgrapht.alg.CycleDetectorTest;3;java.util.Set<java.lang.String>;Graph;DirectedGraph
+org.jgrapht.graph.MaskSubgraph;6;E;MaskFunctor;V;java.util.Collection<? extends V>;java.util.Collection<? extends E>;Graph
+org.jgrapht.graph.AsUndirectedGraph;3;E;V;DirectedGraph
+org.jgrapht.graph.AbstractGraph;5;V;java.lang.Object;java.util.Collection<? extends V>;java.util.Collection<? extends E>;E[]
+org.jgrapht.experimental.permutation.PermutationFactory;1;int[]
+org.jgrapht.AllTests;1;TestSuite
+org.jgrapht.graph.SimpleWeightedGraph;2;EdgeFactory;java.lang.Class<? extends E>
+org.jgrapht.graph.Subgraph;7;E;V;G;GraphVertexChangeEvent;java.util.Set<E>;java.util.Set<V>;GraphEdgeChangeEvent
+org.jgrapht.alg.FloydWarshallShortestPathsTest;0
+org.jgrapht.graph.WeightedPseudograph;2;EdgeFactory;java.lang.Class<? extends E>
+org.jgrapht.experimental.permutation.IntegerPermutationIter;1;int[]
+org.jgrapht.alg.AllAlgTests;0
+org.jgrapht.graph.ClassBasedVertexFactory;1;java.lang.Class<? extends V>
+org.jgrapht.experimental.permutation.CollectionPermutationIter;3;java.util.List<E>;ArrayPermutationsIter;java.util.Set<E>
+org.jgrapht.graph.EqualsAndHashCodeTest;1;java.lang.Object
+org.jgrapht.graph.DirectedMultigraph;2;EdgeFactory;java.lang.Class<? extends E>
+org.jgrapht.experimental.isomorphism.AbstractExhaustiveIsomorphismInspector;4;EquivalenceComparator;Graph;java.util.Set<V>;IsomorphismRelation
+org.jgrapht.generate.SimpleWeightedBipartiteGraphMatrixGenerator;4;VertexFactory;java.util.Map<java.lang.String,V>;java.util.List<? extends V>;WeightedGraph
+org.jgrapht.graph.DefaultGraphMapping;4;E;java.util.Map<V,V>;V;Graph
+org.jgrapht.alg.util.UnionFindTest;3;UnionFind;java.util.ArrayList<java.util.ArrayList<java.lang.String>>;java.lang.String[]
+org.jgrapht.experimental.UniformRandomGraphGenerator;3;VertexFactory;java.util.Map;Graph
+org.jgrapht.traverse.CrossComponentIterator;8;D;localE;E;V;java.lang.Object;Graph;VV;DirectedGraph
+org.jgrapht.graph.DefaultDirectedGraphTest;2;V;DirectedGraph
+org.jgrapht.experimental.isomorphism.VertexDegreeEquivalenceComparator;3;V;java.lang.Object;Graph
+org.jgrapht.generate.WeightedGraphGenerator;3;EdgeFactory;java.lang.Class<? extends E>;double[][]
+org.jgrapht.graph.DirectedWeightedPseudograph;2;EdgeFactory;java.lang.Class<? extends E>
+org.jgrapht.experimental.isomorphism.AdaptiveIsomorphismInspectorFactory;2;EquivalenceComparator;Graph
+org.jgrapht.graph.DefaultListenableGraph;10;E;V;java.lang.Object;java.util.List<L>;L;Graph;VV;GraphListener;EE;VertexSetListener
+org.jgrapht.alg.PrimMinimumSpanningTree;2;E;Graph
+org.jgrapht.event.TraversalListenerAdapter;3;VertexTraversalEvent;EdgeTraversalEvent;ConnectedComponentTraversalEvent
+org.jgrapht.graph.SimpleDirectedGraphTest;2;DefaultEdge;DirectedGraph
+org.jgrapht.alg.BlockCutpointGraph;4;E;V;UndirectedGraph;java.util.Set<V>
+org.jgrapht.graph.ListenableUndirectedWeightedGraph;2;java.lang.Class<? extends E>;WeightedGraph
+org.jgrapht.alg.NeighborIndex;5;java.util.Collection<V>;V;Graph;GraphVertexChangeEvent;GraphEdgeChangeEvent
+org.jgrapht.alg.AbstractPathElementList;5;T;E;V;org.jgrapht.alg.AbstractPathElementList<V,E,T>;Graph
+org.jgrapht.alg.KuhnMunkresMinimalWeightBipartitePerfectMatching;5;boolean[];int[];java.util.List<? extends V>;double[][];WeightedGraph
+org.jgrapht.alg.EdmondsBlossomShrinkingTest;0
+org.jgrapht.graph.EdgeReversedGraph;3;E;V;DirectedGraph
+org.jgrapht.util.ArrayUnenforcedSet;2;java.lang.Object;java.util.Collection<? extends E>
+org.jgrapht.alg.Picture1Graph;0
+org.jgrapht.event.GraphEdgeChangeEvent;3;E;V;java.lang.Object
+org.jgrapht.experimental.isomorphism.EdgeTopologyCompare;1;Graph
+org.jgrapht.graph.ListenableGraphTest;2;GraphVertexChangeEvent;GraphEdgeChangeEvent
+org.jgrapht.experimental.equivalence.UniformEquivalenceComparator;2;E;C
+org.jgrapht.graph.ListenableDirectedWeightedGraph;2;java.lang.Class<? extends E>;WeightedGraph
+org.jgrapht.alg.KShortestPathKValuesTest;1;Graph
+org.jgrapht.alg.TarjanLowestCommonAncestor;3;V;Graph;java.util.List<org.jgrapht.alg.TarjanLowestCommonAncestor.LcaRequestResponse<V>>
+org.jgrapht.experimental.permutation.CompoundPermutationIterTest;0
+org.jgrapht.graph.UndirectedMaskSubgraph;2;MaskFunctor;UndirectedGraph
+org.jgrapht.generate.CompleteBipartiteGraphGenerator;3;VertexFactory;java.util.Map<java.lang.String,V>;Graph
+org.jgrapht.generate.GraphGeneratorTest;0
+org.jgrapht.alg.DijkstraShortestPathTest;1;Graph
+org.jgrapht.experimental.alg.color.GreedyColoring;3;java.util.Map<V,java.lang.Object>;int[];Graph
+org.jgrapht.traverse.BreadthFirstIteratorTest;1;DirectedGraph
+org.jgrapht.traverse.AbstractGraphIterator;4;VertexTraversalEvent;TraversalListener;EdgeTraversalEvent;ConnectedComponentTraversalEvent
+org.jgrapht.graph.WeightedMultigraph;2;EdgeFactory;java.lang.Class<? extends E>
+org.jgrapht.experimental.dag.DirectedAcyclicGraphTest;3;VertexFactory;java.util.Map<java.lang.String,V>;Graph
+org.jgrapht.graph.DirectedSubgraph;4;V;java.util.Set<E>;DirectedGraph;java.util.Set<V>
+org.jgrapht.graph.AbstractBaseGraph;7;E;EdgeFactory;V;java.lang.Object;EdgeSetFactory;VV;EE
+org.jgrapht.graph.Pseudograph;2;EdgeFactory;java.lang.Class<? extends E>
+org.jgrapht.alg.EulerianCircuitTest;0
+org.jgrapht.graph.AsUnweightedGraph;2;E;Graph
+org.jgrapht.experimental.GraphSquare;7;E;V;java.util.Collection<? extends V>;java.util.Collection<? extends E>;Graph;GraphVertexChangeEvent;GraphEdgeChangeEvent
+org.jgrapht.generate.WheelGraphGenerator;3;VertexFactory;java.util.Map<java.lang.String,V>;Graph
+org.jgrapht.alg.BronKerboschCliqueFinder;2;Graph;java.util.List<V>
+org.jgrapht.alg.ShortestPathTestCase;1;Graph
+org.jgrapht.graph.MaskEdgeSet;5;E;MaskFunctor;java.lang.Object;Graph;java.util.Set<E>
+org.jgrapht.experimental.isomorphism.comparators.DirectedEdgeWeightOddEvenComparator;2;java.lang.Object;Graph
+org.jgrapht.experimental.isomorphism.comparators.OddEvenGroupComparator;2;java.lang.Object;java.lang.Integer
+org.jgrapht.util.PrefetchIteratorTest;0
+org.jgrapht.graph.AllGraphTests;0
+org.jgrapht.alg.HamiltonianCycle;1;SimpleWeightedGraph
+org.jgrapht.graph.AsUndirectedGraphTest;0
+org.jgrapht.experimental.isomorphism.PermutationIsomorphismInspector;3;EquivalenceComparator;Graph;java.util.Set<V>
+org.jgrapht.alg.TarjanLowestCommonAncestorTest;0
+org.jgrapht.alg.cycle.TarjanSimpleCycles;2;V;DirectedGraph
+org.jgrapht.generate.GridGraphGenerator;3;VertexFactory;java.util.Map<java.lang.String,V>;Graph
+org.jgrapht.experimental.alg.ColoringTest;0
+org.jgrapht.util.StopWatch;0
+org.jgrapht.traverse.ClosestFirstIteratorTest;1;DirectedGraph
+org.jgrapht.alg.KSPExampleTest;0
+org.jgrapht.alg.MinSourceSinkCut;2;V;DirectedGraph
+org.jgrapht.graph.UndirectedGraphUnion;4;V;WeightCombiner;UndirectedGraph;org.jgrapht.graph.UndirectedGraphUnion<V,E>
+org.jgrapht.alg.BlockCutpointGraphTest;1;BlockCutpointGraph
+org.jgrapht.generate.AllGenerateTests;0
+org.jgrapht.alg.ConnectivityInspectorTest;1;java.lang.Integer
+org.jgrapht.experimental.equivalence.EquivalenceSetCreator;5;EquivalenceComparator;java.util.Collection<EE>;CC;EE[];EquivalenceSet
+org.jgrapht.alg.ChromaticNumberTest;0
+org.jgrapht.util.AllUtilTests;0
+org.jgrapht.alg.EdmondsBlossomShrinking;2;V;UndirectedGraph
+org.jgrapht.traverse.IgnoreDirectionTest;1;DirectedGraph
+org.jgrapht.alg.cycle.PatonCycleBase;1;UndirectedGraph
+org.jgrapht.generate.EmptyGraphGenerator;3;VertexFactory;java.util.Map<java.lang.String,V>;Graph
+org.jgrapht.graph.ListenableUndirectedGraph;2;java.lang.Class<? extends E>;UndirectedGraph
+org.jgrapht.graph.CloneTest;1;java.lang.Object
+org.jgrapht.alg.util.VertexDegreeComparator;2;V;UndirectedGraph
+org.jgrapht.graph.GraphPathImpl;3;java.util.List<E>;V;Graph
+org.jgrapht.alg.TransitiveClosure;1;SimpleDirectedGraph
+org.jgrapht.graph.UnmodifiableUndirectedGraph;1;UndirectedGraph
+org.jgrapht.alg.util.AllAlgUtilTests;0
+org.jgrapht.generate.RingGraphGenerator;3;VertexFactory;java.util.Map<java.lang.String,V>;Graph
+org.jgrapht.alg.BiconnectedGraph;0
+org.jgrapht.alg.StoerWagnerMinimumCutTest;0
+org.jgrapht.alg.FloydWarshallShortestPaths;3;java.util.List<E>;V;Graph
+org.jgrapht.alg.MinimumSpanningTreeTest;3;MinimumSpanningTree;java.util.Collection<E>;KruskalMinimumSpanningTree
+org.jgrapht.graph.GenericGraphsTest;1;java.lang.Object
+org.jgrapht.alg.DijkstraShortestPath;3;V;ClosestFirstIterator;Graph
+org.jgrapht.graph.SerializationTest;1;java.lang.Object
+org.jgrapht.util.FibonacciHeapTest;0
+org.jgrapht.alg.ChromaticNumber;1;UndirectedGraph

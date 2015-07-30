@@ -1,0 +1,207 @@
+com.google.common.collect.FilteredMultimapValues;3;java.util.Collection<?>;java.lang.Object;com.google.common.collect.FilteredMultimap<K,V>
+com.google.common.escape.ArrayBasedCharEscaper;3;com.google.common.escape.ArrayBasedEscaperMap;char[][];java.util.Map<java.lang.Character,java.lang.String>
+com.google.common.collect.ForwardingTable;5;V;java.lang.Object;R;C;com.google.common.collect.Table<? extends R,? extends C,? extends V>
+com.google.common.collect.EmptyImmutableSet;3;java.util.Collection<?>;java.lang.Object[];java.lang.Object
+com.google.common.collect.GeneralRange;6;T;java.util.Comparator<? super T>;java.lang.Object;com.google.common.collect.Range<T>;com.google.common.collect.GeneralRange<T>;com.google.common.collect.BoundType
+com.google.common.util.concurrent.ThreadFactoryBuilder;4;com.google.common.util.concurrent.ThreadFactoryBuilder;java.lang.Runnable;java.lang.Thread.UncaughtExceptionHandler;java.util.concurrent.ThreadFactory
+com.google.thirdparty.publicsuffix.PublicSuffixPatterns;0
+com.google.common.cache.CacheStats;2;java.lang.Object;com.google.common.cache.CacheStats
+com.google.common.io.PatternFilenameFilter;2;java.util.regex.Pattern;java.io.File
+com.google.common.collect.ImmutableSortedAsList;3;com.google.common.collect.ImmutableList<E>;java.lang.Object;com.google.common.collect.ImmutableSortedSet<E>
+com.google.common.math.LongMath;1;java.math.RoundingMode
+com.google.common.base.Defaults;3;T;java.util.Map<java.lang.Class<?>,java.lang.Object>;java.lang.Class<T>
+com.google.common.collect.AbstractSortedMultiset;3;E;java.util.Comparator<? super E>;com.google.common.collect.BoundType
+com.google.common.collect.CompoundOrdering;4;T;java.util.Comparator<? super T>;java.lang.Object;java.lang.Iterable<? extends java.util.Comparator<? super T>>
+com.google.common.base.Strings;1;java.lang.CharSequence
+com.google.common.collect.Queues;6;java.lang.Iterable<? extends E>;java.util.concurrent.TimeUnit;java.util.Collection<? super E>;java.util.Deque<E>;java.util.Queue<E>;java.util.concurrent.BlockingQueue<E>
+com.google.common.collect.EmptyImmutableSortedMap;4;java.util.Comparator<? super K>;java.lang.Object;com.google.common.collect.ImmutableSortedMap<K,V>;K
+com.google.common.collect.EmptyImmutableSortedMultiset;6;E;java.util.Collection<?>;java.lang.Object[];java.util.Comparator<? super E>;java.lang.Object;com.google.common.collect.BoundType
+com.google.common.collect.RegularImmutableList;2;java.lang.Object[];java.lang.Object
+com.google.common.collect.HashMultimap;3;java.io.ObjectInputStream;java.io.ObjectOutputStream;com.google.common.collect.Multimap<? extends K,? extends V>
+com.google.common.collect.ForwardingMapEntry;2;V;java.lang.Object
+com.google.common.collect.ForwardingListIterator;1;E
+com.google.common.base.Optional;6;java.lang.Iterable<? extends com.google.common.base.Optional<? extends T>>;T;com.google.common.base.Optional<? extends T>;java.lang.Object;com.google.common.base.Function<? super T,V>;com.google.common.base.Supplier<? extends T>
+com.google.common.cache.LongAdder;2;java.io.ObjectInputStream;java.io.ObjectOutputStream
+com.google.common.hash.AbstractByteHasher;3;T;com.google.common.hash.Funnel<? super T>;byte[]
+com.google.common.io.Closeables;3;java.io.InputStream;java.io.Closeable;java.io.Reader
+com.google.common.collect.SingletonImmutableBiMap;5;java.util.Map.Entry<? extends K,? extends V>;V;java.lang.Object;com.google.common.collect.ImmutableBiMap<V,K>;K
+com.google.common.collect.EnumHashBiMap;6;java.io.ObjectInputStream;V;java.io.ObjectOutputStream;java.lang.Class<K>;java.util.Map<K,? extends V>;K
+com.google.common.io.CharSequenceReader;3;char[];java.lang.CharSequence;java.nio.CharBuffer
+com.google.common.cache.RemovalNotification;4;V;java.lang.Object;com.google.common.cache.RemovalCause;K
+com.google.common.collect.RegularImmutableSet;2;java.lang.Object[];java.lang.Object
+com.google.common.util.concurrent.SettableFuture;2;V;java.lang.Throwable
+com.google.common.net.PercentEscaper;1;java.lang.CharSequence
+com.google.common.reflect.TypeCapture;0
+com.google.common.math.BigIntegerMath;3;java.math.BigInteger;java.util.List<java.math.BigInteger>;java.math.RoundingMode
+com.google.common.base.Absent;5;T;com.google.common.base.Optional<? extends T>;java.lang.Object;com.google.common.base.Function<? super T,V>;com.google.common.base.Supplier<? extends T>
+com.google.common.collect.EnumBiMap;9;java.io.ObjectInputStream;java.util.Map<K,?>;java.util.Map<K,V>;V;java.io.ObjectOutputStream;java.lang.Class<K>;java.util.Map<?,V>;java.lang.Class<V>;K
+com.google.common.util.concurrent.UncheckedExecutionException;1;java.lang.Throwable
+com.google.common.collect.EmptyImmutableSetMultimap;0
+com.google.common.collect.TransformedIterator;2;F;java.util.Iterator<? extends F>
+com.google.common.collect.ForwardingImmutableSet;0
+com.google.common.collect.ImmutableSortedSetFauxverideShim;2;E;E[]
+com.google.common.collect.ReverseOrdering;6;E;T;java.lang.Object;java.lang.Iterable<E>;java.util.Iterator<E>;com.google.common.collect.Ordering<? super T>
+com.google.common.collect.AbstractSortedSetMultimap;4;java.lang.Object;java.util.Map<K,java.util.Collection<V>>;java.lang.Iterable<? extends V>;K
+com.google.common.collect.ForwardingDeque;2;E;java.lang.Object
+com.google.common.collect.SingletonImmutableList;3;E;java.lang.Object[];java.lang.Object
+com.google.common.collect.ForwardingSet;2;java.util.Collection<?>;java.lang.Object
+com.google.common.escape.Escaper;0
+com.google.common.io.Flushables;1;java.io.Flushable
+com.google.common.util.concurrent.ListenableFutureTask;4;V;java.lang.Runnable;java.util.concurrent.Callable<V>;java.util.concurrent.Executor
+com.google.common.io.CountingOutputStream;2;java.io.OutputStream;byte[]
+com.google.common.io.MultiInputStream;2;java.util.Iterator<? extends com.google.common.io.ByteSource>;byte[]
+com.google.common.collect.SparseImmutableTable;3;com.google.common.collect.ImmutableSet<R>;com.google.common.collect.ImmutableSet<C>;com.google.common.collect.ImmutableList<com.google.common.collect.Table.Cell<R,C,V>>
+com.google.common.base.FinalizableWeakReference;2;T;com.google.common.base.FinalizableReferenceQueue
+com.google.common.collect.SortedIterables;3;java.lang.Iterable<?>;java.util.SortedSet<E>;java.util.Comparator<?>
+com.google.common.util.concurrent.FakeTimeLimiter;4;java.util.concurrent.Callable<T>;java.util.concurrent.TimeUnit;T;java.lang.Class<T>
+com.google.common.collect.AbstractRangeSet;4;java.lang.Object;com.google.common.collect.RangeSet<C>;C;com.google.common.collect.Range<C>
+com.google.common.base.Present;5;T;com.google.common.base.Optional<? extends T>;java.lang.Object;com.google.common.base.Function<? super T,V>;com.google.common.base.Supplier<? extends T>
+com.google.common.io.MultiReader;1;java.util.Iterator<? extends com.google.common.io.CharSource>
+com.google.common.base.VerifyException;0
+com.google.common.io.LittleEndianDataInputStream;2;java.io.InputStream;byte[]
+com.google.common.collect.ForwardingCollection;5;E;java.util.Collection<?>;java.lang.Object;T[];java.util.Collection<? extends E>
+com.google.common.escape.Platform;0
+com.google.common.util.concurrent.Runnables;0
+com.google.common.collect.NullsFirstOrdering;3;T;java.lang.Object;com.google.common.collect.Ordering<? super T>
+com.google.common.eventbus.AsyncEventBus;5;com.google.common.eventbus.EventSubscriber;com.google.common.eventbus.SubscriberExceptionHandler;java.lang.Object;java.lang.reflect.Method;java.util.concurrent.Executor
+com.google.common.base.FunctionalEquivalence;4;F;java.lang.Object;com.google.common.base.Equivalence<T>;com.google.common.base.Function<F,? extends T>
+com.google.common.collect.LinkedHashMultiset;3;java.lang.Iterable<? extends E>;java.io.ObjectInputStream;java.io.ObjectOutputStream
+com.google.common.collect.AbstractListMultimap;5;V;java.lang.Object;java.util.Map<K,java.util.Collection<V>>;java.lang.Iterable<? extends V>;K
+com.google.common.primitives.UnsignedLong;3;java.math.BigInteger;java.lang.Object;com.google.common.primitives.UnsignedLong
+com.google.common.util.concurrent.ForwardingBlockingQueue;3;java.util.concurrent.TimeUnit;E;java.util.Collection<? super E>
+com.google.common.primitives.ParseRequest;0
+com.google.common.collect.ForwardingSetMultimap;3;java.lang.Object;java.lang.Iterable<? extends V>;K
+com.google.common.collect.UnmodifiableListIterator;1;E
+com.google.common.primitives.UnsignedInteger;3;java.math.BigInteger;java.lang.Object;com.google.common.primitives.UnsignedInteger
+com.google.common.io.CharSink;3;java.lang.CharSequence;java.lang.Readable;java.lang.Iterable<? extends java.lang.CharSequence>
+com.google.common.collect.CollectPreconditions;1;java.lang.Object
+com.google.common.base.Throwables;4;java.lang.Class<X>;java.lang.Class<X1>;java.lang.Throwable;java.lang.Class<X2>
+com.google.common.collect.ByFunctionOrdering;4;F;java.lang.Object;com.google.common.collect.Ordering<T>;com.google.common.base.Function<F,? extends T>
+com.google.common.eventbus.EventSubscriber;2;java.lang.Object;java.lang.reflect.Method
+com.google.common.collect.ForwardingImmutableList;0
+com.google.common.reflect.Reflection;3;java.lang.Class<?>;java.lang.Class<T>;java.lang.reflect.InvocationHandler
+com.google.common.net.InternetDomainName;2;java.lang.Object;java.util.List<java.lang.String>
+com.google.common.collect.ForwardingListMultimap;3;java.lang.Object;java.lang.Iterable<? extends V>;K
+com.google.common.collect.MutableClassToInstanceMap;6;T;java.lang.Object;java.lang.Class<?>;B;java.util.Map<java.lang.Class<? extends B>,B>;java.lang.Class<T>
+com.google.common.collect.ComputationException;1;java.lang.Throwable
+com.google.common.xml.XmlEscapers;0
+com.google.common.collect.ImmutableSortedMapFauxverideShim;2;V;K
+com.google.common.base.Stopwatch;2;java.util.concurrent.TimeUnit;com.google.common.base.Ticker
+com.google.common.collect.HashMultiset;3;java.lang.Iterable<? extends E>;java.io.ObjectInputStream;java.io.ObjectOutputStream
+com.google.common.collect.SingletonImmutableSet;3;E;java.lang.Object[];java.lang.Object
+com.google.common.reflect.Parameter;6;java.lang.Class<? extends java.lang.annotation.Annotation>;java.lang.Object;com.google.common.reflect.TypeToken<?>;java.lang.Class<A>;java.lang.annotation.Annotation[];com.google.common.reflect.Invokable<?,?>
+com.google.common.collect.RegularImmutableMultiset;2;java.lang.Object;com.google.common.collect.ImmutableMap<E,java.lang.Integer>
+com.google.common.escape.UnicodeEscaper;2;char[];java.lang.CharSequence
+com.google.common.collect.DescendingImmutableSortedMultiset;4;E;java.lang.Object;com.google.common.collect.BoundType;com.google.common.collect.ImmutableSortedMultiset<E>
+com.google.common.collect.Range;11;java.lang.Iterable<T>;java.lang.Comparable;java.lang.Object;java.lang.Iterable<? extends C>;com.google.common.collect.DiscreteDomain<C>;C;com.google.common.collect.Cut<?>;com.google.common.collect.Range<C>;com.google.common.collect.BoundType;com.google.common.collect.Cut<C>;java.lang.Iterable<C>
+com.google.common.util.concurrent.WrappingExecutorService;6;java.util.concurrent.Callable<T>;java.util.concurrent.TimeUnit;T;java.lang.Runnable;java.util.Collection<? extends java.util.concurrent.Callable<T>>;java.util.concurrent.ExecutorService
+com.google.common.collect.ObjectArrays;7;java.util.Collection<?>;T;java.lang.Object[];java.lang.Object;java.lang.Iterable<?>;T[];java.lang.Class<T>
+com.google.common.eventbus.SynchronizedEventSubscriber;2;java.lang.Object;java.lang.reflect.Method
+com.google.common.collect.ComparatorOrdering;3;T;java.lang.Object;java.util.Comparator<T>
+com.google.common.net.UrlEscapers;0
+com.google.common.eventbus.SubscriberExceptionContext;3;java.lang.Object;java.lang.reflect.Method;com.google.common.eventbus.EventBus
+com.google.common.util.concurrent.ExecutionError;1;java.lang.Error
+com.google.common.net.HostSpecifier;1;java.lang.Object
+com.google.common.collect.RegularImmutableSortedMultiset;6;E;com.google.common.collect.RegularImmutableSortedSet<E>;java.lang.Object;int[];com.google.common.collect.BoundType;long[]
+com.google.common.collect.EmptyImmutableBiMap;1;java.lang.Object
+com.google.common.collect.ForwardingBlockingDeque;3;java.util.Collection<? super E>;java.util.concurrent.TimeUnit;E
+com.google.common.util.concurrent.ForwardingExecutorService;5;java.util.concurrent.Callable<T>;T;java.util.concurrent.TimeUnit;java.lang.Runnable;java.util.Collection<? extends java.util.concurrent.Callable<T>>
+com.google.common.collect.EvictingQueue;3;E;java.lang.Object;java.util.Collection<? extends E>
+com.google.common.base.Utf8;2;java.lang.CharSequence;byte[]
+com.google.common.collect.AbstractIndexedListIterator;0
+com.google.common.base.Ascii;1;java.lang.CharSequence
+com.google.common.collect.ForwardingConcurrentMap;3;V;java.lang.Object;K
+com.google.common.io.AppendableWriter;2;java.lang.CharSequence;java.lang.Appendable
+com.google.common.collect.ForwardingIterator;0
+com.google.common.util.concurrent.WrappingScheduledExecutorService;4;java.util.concurrent.TimeUnit;java.lang.Runnable;java.util.concurrent.Callable<V>;java.util.concurrent.ScheduledExecutorService
+com.google.common.escape.ArrayBasedEscaperMap;2;char[][];java.util.Map<java.lang.Character,java.lang.String>
+com.google.common.util.concurrent.Callables;5;java.util.concurrent.Callable<T>;T;java.lang.Runnable;java.lang.Thread;com.google.common.base.Supplier<java.lang.String>
+com.google.common.collect.SingletonImmutableTable;4;V;com.google.common.collect.Table.Cell<R,C,V>;C;R
+com.google.common.math.MathPreconditions;1;java.math.BigInteger
+com.google.common.util.concurrent.AtomicDouble;2;java.io.ObjectInputStream;java.io.ObjectOutputStream
+com.google.common.collect.ReverseNaturalOrdering;4;E;java.lang.Comparable;java.lang.Iterable<E>;java.util.Iterator<E>
+com.google.common.collect.ForwardingMultimap;5;V;java.lang.Object;com.google.common.collect.Multimap<? extends K,? extends V>;java.lang.Iterable<? extends V>;K
+com.google.common.collect.EnumMultiset;4;java.lang.Class<E>;java.io.ObjectInputStream;java.io.ObjectOutputStream;java.lang.Iterable<E>
+com.google.common.cache.AbstractLoadingCache;2;java.lang.Iterable<? extends K>;K
+com.google.common.base.Platform;2;com.google.common.base.CharMatcher;java.lang.Class<T>
+com.google.common.collect.ForwardingSortedSet;2;E;java.lang.Object
+com.google.common.eventbus.DeadEvent;1;java.lang.Object
+com.google.common.collect.AbstractSortedKeySortedSetMultimap;1;java.util.SortedMap<K,java.util.Collection<V>>
+com.google.common.util.concurrent.UncheckedTimeoutException;1;java.lang.Throwable
+com.google.common.util.concurrent.AtomicDoubleArray;3;double[];java.io.ObjectInputStream;java.io.ObjectOutputStream
+com.google.common.math.IntMath;1;java.math.RoundingMode
+com.google.common.hash.AbstractCompositeHashFunction;7;T;com.google.common.hash.HashFunction;java.lang.CharSequence;com.google.common.hash.Funnel<? super T>;java.nio.charset.Charset;byte[];com.google.common.hash.Hasher[]
+com.google.common.collect.ImmutableSortedMultisetFauxverideShim;2;E;E[]
+com.google.common.util.concurrent.AbstractCheckedFuture;3;com.google.common.util.concurrent.ListenableFuture<V>;java.util.concurrent.TimeUnit;java.lang.Exception
+com.google.common.escape.ArrayBasedUnicodeEscaper;4;com.google.common.escape.ArrayBasedEscaperMap;char[][];java.lang.CharSequence;java.util.Map<java.lang.Character,java.lang.String>
+com.google.common.util.concurrent.Uninterruptibles;7;E;java.util.concurrent.TimeUnit;java.util.concurrent.Semaphore;java.lang.Thread;java.util.concurrent.Future<V>;java.util.concurrent.CountDownLatch;java.util.concurrent.BlockingQueue<E>
+com.google.common.collect.Hashing;1;java.lang.Object
+com.google.common.collect.UnmodifiableIterator;0
+com.google.common.io.LineBuffer;1;char[]
+com.google.common.collect.ForwardingQueue;1;E
+com.google.common.collect.TransformedListIterator;2;T;java.util.ListIterator<? extends F>
+com.google.common.hash.HashingInputStream;3;java.io.InputStream;com.google.common.hash.HashFunction;byte[]
+com.google.common.reflect.Element;4;java.lang.Class<? extends java.lang.annotation.Annotation>;java.lang.Object;M;java.lang.Class<A>
+com.google.common.reflect.TypeVisitor;6;java.lang.reflect.WildcardType;java.lang.reflect.Type;java.lang.Class<?>;java.lang.reflect.TypeVariable<?>;java.lang.reflect.ParameterizedType;java.lang.reflect.GenericArrayType
+com.google.common.primitives.Primitives;3;java.lang.Class<?>;java.util.Map<java.lang.Class<?>,java.lang.Class<?>>;java.lang.Class<T>
+com.google.common.escape.CharEscaper;1;char[]
+com.google.common.collect.ForwardingImmutableCollection;0
+com.google.common.reflect.TypeParameter;1;java.lang.Object
+com.google.common.collect.ExplicitOrdering;4;T;java.util.List<T>;java.lang.Object;com.google.common.collect.ImmutableMap<T,java.lang.Integer>
+com.google.common.hash.AbstractHasher;2;java.lang.CharSequence;java.nio.charset.Charset
+com.google.common.base.Charsets;0
+com.google.common.base.PairwiseEquivalence;3;java.lang.Iterable<T>;java.lang.Object;com.google.common.base.Equivalence<? super T>
+com.google.common.collect.RegularImmutableSortedSet;6;E;java.util.Collection<?>;com.google.common.collect.ImmutableList<E>;java.lang.Object[];java.util.Comparator<? super E>;java.lang.Object
+com.google.common.collect.AbstractMapEntry;2;V;java.lang.Object
+com.google.common.collect.RegularImmutableAsList;3;java.lang.Object[];com.google.common.collect.ImmutableList<? extends E>;com.google.common.collect.ImmutableCollection<E>
+com.google.common.util.concurrent.ForwardingListeningExecutorService;3;java.util.concurrent.Callable<T>;T;java.lang.Runnable
+com.google.common.collect.LexicographicalOrdering;3;java.lang.Iterable<T>;java.lang.Object;com.google.common.collect.Ordering<? super T>
+com.google.common.collect.UnmodifiableSortedMultiset;3;E;com.google.common.collect.BoundType;com.google.common.collect.SortedMultiset<E>
+com.google.common.collect.ImmutableEntry;2;V;K
+com.google.common.base.SmallCharMatcher;2;char[];java.util.BitSet
+com.google.common.net.HttpHeaders;0
+com.google.common.collect.DescendingImmutableSortedSet;3;E;java.lang.Object;com.google.common.collect.ImmutableSortedSet<E>
+com.google.common.collect.ForwardingList;4;java.lang.Iterable<? extends E>;E;java.lang.Object;java.util.Collection<? extends E>
+com.google.common.collect.AbstractSetMultimap;5;V;java.lang.Object;java.util.Map<K,java.util.Collection<V>>;java.lang.Iterable<? extends V>;K
+com.google.common.collect.GenericMapMaker;3;java.util.concurrent.TimeUnit;com.google.common.base.Equivalence<java.lang.Object>;com.google.common.base.Function<? super K,? extends V>
+com.google.common.collect.ForwardingImmutableMap;0
+com.google.common.math.DoubleUtils;1;java.math.BigInteger
+com.google.thirdparty.publicsuffix.TrieParser;4;char[];com.google.common.collect.ImmutableMap.Builder<java.lang.String,com.google.thirdparty.publicsuffix.PublicSuffixType>;java.lang.CharSequence;java.util.List<java.lang.CharSequence>
+com.google.common.util.concurrent.AbstractExecutionThreadService;4;java.util.concurrent.TimeUnit;java.lang.Runnable;java.util.concurrent.Executor;com.google.common.util.concurrent.Service.Listener
+com.google.common.collect.CartesianList;3;java.util.List<? extends java.util.List<? extends E>>;java.lang.Object;com.google.common.collect.ImmutableList<java.util.List<E>>
+com.google.common.base.Preconditions;2;T;java.lang.Object
+com.google.common.collect.ContiguousSet;5;com.google.common.collect.DiscreteDomain<C>;C;com.google.common.collect.Range<C>;com.google.common.collect.BoundType;com.google.common.collect.ContiguousSet<C>
+com.google.common.util.concurrent.SimpleTimeLimiter;11;java.util.concurrent.Callable<T>;java.util.concurrent.TimeUnit;T;java.lang.Object[];java.lang.Object;java.lang.Class<?>;java.lang.Exception;java.lang.reflect.Method;java.lang.Class<T>;java.lang.reflect.InvocationHandler;java.util.concurrent.ExecutorService
+com.google.common.collect.ArrayListMultimap;3;java.io.ObjectInputStream;java.io.ObjectOutputStream;com.google.common.collect.Multimap<? extends K,? extends V>
+com.google.common.collect.UsingToStringOrdering;1;java.lang.Object
+com.google.common.reflect.AbstractInvocationHandler;4;java.lang.Object[];java.lang.Object;java.lang.Class<?>;java.lang.reflect.Method
+com.google.common.collect.Platform;11;java.util.SortedSet<K>;java.util.SortedMap<K,V1>;java.util.Map<E,java.lang.Boolean>;com.google.common.collect.MapMaker;com.google.common.base.Function<? super K,V>;T[];java.util.SortedSet<E>;com.google.common.base.Predicate<? super java.util.Map.Entry<K,V>>;java.util.SortedMap<K,V>;com.google.common.collect.Maps.EntryTransformer<? super K,? super V1,V2>;com.google.common.base.Predicate<? super E>
+com.google.common.collect.NullsLastOrdering;3;T;java.lang.Object;com.google.common.collect.Ordering<? super T>
+com.google.common.collect.DescendingMultiset;3;E;T[];com.google.common.collect.BoundType
+com.google.common.net.HostAndPort;1;java.lang.Object
+com.google.common.base.FinalizableSoftReference;2;T;com.google.common.base.FinalizableReferenceQueue
+com.google.common.hash.HashingOutputStream;3;com.google.common.hash.HashFunction;java.io.OutputStream;byte[]
+com.google.common.base.Verify;2;T;java.lang.Object
+com.google.common.cache.RemovalListeners;3;com.google.common.cache.RemovalListener<K,V>;com.google.common.cache.RemovalNotification<K,V>;java.util.concurrent.Executor
+com.google.common.collect.EmptyImmutableSortedSet;5;E;java.util.Collection<?>;java.lang.Object[];java.util.Comparator<? super E>;java.lang.Object
+com.google.common.collect.ForwardingSortedSetMultimap;3;java.lang.Object;java.lang.Iterable<? extends V>;K
+com.google.common.base.internal.Finalizer;4;java.lang.ref.Reference<?>;java.lang.Class<?>;java.lang.ref.PhantomReference<java.lang.Object>;java.lang.ref.ReferenceQueue<java.lang.Object>
+com.google.common.collect.Count;1;java.lang.Object
+com.google.common.collect.FilteredEntrySetMultimap;5;java.lang.Object;com.google.common.base.Predicate<? super java.util.Map.Entry<K,V>>;java.lang.Iterable<? extends V>;com.google.common.collect.SetMultimap<K,V>;K
+com.google.common.base.FinalizablePhantomReference;2;T;com.google.common.base.FinalizableReferenceQueue
+com.google.common.util.concurrent.AbstractListeningExecutorService;3;java.util.concurrent.Callable<T>;T;java.lang.Runnable
+com.google.common.io.LittleEndianDataOutputStream;2;java.io.OutputStream;byte[]
+com.google.common.collect.AllEqualOrdering;2;java.lang.Object;java.lang.Iterable<E>
+com.google.common.util.concurrent.AbstractIdleService;4;java.util.concurrent.TimeUnit;java.lang.Runnable;java.util.concurrent.Executor;com.google.common.util.concurrent.Service.Listener
+com.google.common.base.Ticker;0
+com.google.common.util.concurrent.Atomics;2;V;E[]
+com.google.common.html.HtmlEscapers;0
+com.google.common.io.LineReader;1;java.lang.Readable
+com.google.common.collect.AbstractSequentialIterator;1;T
+com.google.common.collect.NaturalOrdering;1;java.lang.Comparable
+com.google.common.io.CountingInputStream;2;java.io.InputStream;byte[]
+com.google.common.collect.EmptyImmutableListMultimap;0
+com.google.common.collect.ForwardingObject;0
+com.google.common.collect.TreeMultimap;7;java.io.ObjectInputStream;java.util.Collection<V>;java.util.Comparator<? super K>;java.io.ObjectOutputStream;com.google.common.collect.Multimap<? extends K,? extends V>;K;java.util.Comparator<? super V>
+com.google.common.util.concurrent.AtomicLongMap;5;java.util.concurrent.ConcurrentHashMap<K,java.util.concurrent.atomic.AtomicLong>;java.util.concurrent.atomic.AtomicLong;java.lang.Object;java.util.Map<? extends K,? extends java.lang.Long>;K
+com.google.common.collect.FilteredKeyListMultimap;5;com.google.common.base.Predicate<? super K>;java.lang.Object;com.google.common.collect.ListMultimap<K,V>;java.lang.Iterable<? extends V>;K

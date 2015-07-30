@@ -1,0 +1,2 @@
+ClassId;Dependencies;tryStatement;ifStatement;forStatement;enhancedForStatement/* foreach */;doStatement;whileStatement;switchCase;switchStatement;catchClause;totalBranches;numOfStatements;FieldDeclaration;synchronizedStatement;methodDeclaration;privateMethod;publicMethod;staticMethod;anonymousClassDeclaration;nbMemberClasses;nbStringParams;nbPrimitiveParams;nbOtherTypesParams;nbOtherTypesParamsLibrary;trowStatement;parameterizedType;arrayType;NestedBlocks;MaxDepth
+testClasses.class2;1;4;5;

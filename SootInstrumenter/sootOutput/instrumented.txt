@@ -1,0 +1,134 @@
+Compiled from "SampleSoot.java"
+public class MyExemples.SampleSoot {
+  public static void main(java.lang.String[]);
+    Code:
+       0: getstatic     #43                 // Field java/lang/System.out:Ljava/io/PrintStream;
+       3: astore_1
+       4: aload_1
+       5: ldc           #34                 // String Running SampleSoot
+       7: invokevirtual #10                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+      10: aload_0
+      11: astore_1
+      12: iconst_0
+      13: istore_2
+      14: aload_1
+      15: iload_2
+      16: aaload
+      17: astore_2
+      18: aload_2
+      19: invokestatic  #24                 // Method java/lang/Integer.valueOf:(Ljava/lang/String;)Ljava/lang/Integer;
+      22: astore_2
+      23: aload_2
+      24: invokevirtual #12                 // Method java/lang/Integer.intValue:()I
+      27: istore_2
+      28: aload_0
+      29: astore_1
+      30: iconst_1
+      31: istore_3
+      32: aload_1
+      33: iload_3
+      34: aaload
+      35: astore_3
+      36: aload_3
+      37: invokestatic  #24                 // Method java/lang/Integer.valueOf:(Ljava/lang/String;)Ljava/lang/Integer;
+      40: astore_3
+      41: aload_3
+      42: invokevirtual #12                 // Method java/lang/Integer.intValue:()I
+      45: istore_3
+      46: aload_0
+      47: astore_1
+      48: iconst_2
+      49: istore        4
+      51: aload_1
+      52: iload         4
+      54: aaload
+      55: astore        4
+      57: aload         4
+      59: invokestatic  #24                 // Method java/lang/Integer.valueOf:(Ljava/lang/String;)Ljava/lang/Integer;
+      62: astore        4
+      64: aload         4
+      66: invokevirtual #12                 // Method java/lang/Integer.intValue:()I
+      69: istore        4
+      71: aload_0
+      72: astore_1
+      73: iconst_3
+      74: istore_0
+      75: aload_1
+      76: iload_0
+      77: aaload
+      78: astore_1
+      79: aload_1
+      80: invokestatic  #24                 // Method java/lang/Integer.valueOf:(Ljava/lang/String;)Ljava/lang/Integer;
+      83: astore_1
+      84: aload_1
+      85: invokevirtual #12                 // Method java/lang/Integer.intValue:()I
+      88: istore_1
+      89: iload_2
+      90: iload_3
+      91: iload         4
+      93: iload_1
+      94: invokestatic  #22                 // Method graphTest:(IIII)V
+      97: return
+
+  public static void graphTest(int, int, int, int);
+    Code:
+       0: iload_0
+       1: iload_1
+       2: if_icmplt     8
+       5: goto          54
+       8: nop
+       9: bipush        11
+      11: istore_0
+      12: iload_0
+      13: istore_0
+      14: iload_1
+      15: iload_2
+      16: if_icmpeq     22
+      19: goto          48
+      22: nop
+      23: bipush        21
+      25: istore_2
+      26: iload_2
+      27: istore_0
+      28: iload_3
+      29: iload_1
+      30: if_icmpgt     36
+      33: goto          42
+      36: nop
+      37: bipush        31
+      39: istore_3
+      40: iload_3
+      41: istore_0
+      42: nop
+      43: bipush        32
+      45: istore_3
+      46: iload_3
+      47: istore_0
+      48: nop
+      49: bipush        22
+      51: istore_3
+      52: iload_3
+      53: istore_0
+      54: nop
+      55: bipush        12
+      57: istore_3
+      58: iload_3
+      59: istore_0
+      60: getstatic     #43                 // Field java/lang/System.out:Ljava/io/PrintStream;
+      63: astore_3
+      64: aload_3
+      65: iload_0
+      66: invokevirtual #33                 // Method java/io/PrintStream.println:(I)V
+      69: return
+      70: getstatic     #43                 // Field java/lang/System.out:Ljava/io/PrintStream;
+      73: astore_3
+      74: aload_3
+      75: ldc           #26                 // String Hello world!
+      77: invokevirtual #10                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+
+  public MyExemples.SampleSoot();
+    Code:
+       0: aload_0
+       1: invokespecial #38                 // Method java/lang/Object."<init>":()V
+       4: return
+}

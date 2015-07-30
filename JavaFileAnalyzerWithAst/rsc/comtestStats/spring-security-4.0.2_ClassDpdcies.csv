@@ -1,0 +1,167 @@
+org.springframework.security.authentication.event.AbstractAuthenticationEvent;1;org.springframework.security.core.Authentication
+org.springframework.security.authentication.jaas.JaasGrantedAuthority;2;java.lang.Object;java.security.Principal
+org.springframework.security.authentication.rcp.RemoteAuthenticationManagerImpl;1;org.springframework.security.authentication.AuthenticationManager
+org.springframework.security.authentication.dao.SystemWideSaltSource;1;org.springframework.security.core.userdetails.UserDetails
+org.springframework.security.context.DelegatingApplicationListener;2;SmartApplicationListener;ApplicationEvent
+org.springframework.security.authentication.jaas.DefaultLoginExceptionResolver;1;javax.security.auth.login.LoginException
+org.springframework.security.access.event.AuthorizationFailureEvent;5;org.springframework.security.core.Authentication;java.lang.Object;java.util.Collection<org.springframework.security.access.ConfigAttribute>;java.lang.Throwable;org.springframework.security.access.AccessDeniedException
+org.springframework.security.authentication.event.AuthenticationFailureLockedEvent;3;org.springframework.security.core.Authentication;java.lang.Throwable;org.springframework.security.core.AuthenticationException
+org.springframework.security.access.intercept.RunAsUserToken;3;java.util.Collection<? extends org.springframework.security.core.GrantedAuthority>;java.lang.Class<? extends org.springframework.security.core.Authentication>;java.lang.Object
+org.springframework.security.core.context.SecurityContextImpl;2;org.springframework.security.core.Authentication;java.lang.Object
+org.springframework.security.concurrent.DelegatingSecurityContextRunnable;2;java.lang.Runnable;org.springframework.security.core.context.SecurityContext
+org.springframework.security.access.intercept.RunAsImplAuthenticationProvider;3;MessageSource;org.springframework.security.core.Authentication;java.lang.Class<?>
+org.springframework.security.authentication.ProviderNotFoundException;0
+org.springframework.security.authentication.jaas.SecurityContextLoginModule;3;java.util.Map;javax.security.auth.Subject;javax.security.auth.callback.CallbackHandler
+org.springframework.security.authentication.encoding.PlaintextPasswordEncoder;1;java.lang.Object
+org.springframework.security.access.method.AbstractMethodSecurityMetadataSource;2;java.lang.Object;java.lang.Class<?>
+org.springframework.security.authentication.event.AuthenticationFailureServiceExceptionEvent;3;org.springframework.security.core.Authentication;java.lang.Throwable;org.springframework.security.core.AuthenticationException
+org.springframework.security.core.userdetails.UsernameNotFoundException;1;java.lang.Throwable
+org.springframework.security.concurrent.DelegatingSecurityContextCallable;2;java.util.concurrent.Callable<V>;org.springframework.security.core.context.SecurityContext
+org.springframework.security.authentication.encoding.BasePasswordEncoder;1;java.lang.Object
+org.springframework.security.authentication.jaas.event.JaasAuthenticationEvent;1;org.springframework.security.core.Authentication
+org.springframework.security.core.authority.mapping.SimpleAttributes2GrantedAuthoritiesMapper;1;java.util.Collection<java.lang.String>
+org.springframework.security.access.hierarchicalroles.RoleHierarchyImpl;3;java.util.Collection<? extends org.springframework.security.core.GrantedAuthority>;org.springframework.security.core.GrantedAuthority;java.util.Set<org.springframework.security.core.GrantedAuthority>
+org.springframework.security.access.intercept.AfterInvocationProviderManager;6;org.springframework.security.core.Authentication;java.util.Collection<org.springframework.security.access.ConfigAttribute>;java.lang.Object;java.lang.Class<?>;java.util.List<?>;org.springframework.security.access.ConfigAttribute
+org.springframework.security.util.InMemoryResource;2;java.lang.Object;byte[]
+org.springframework.security.authentication.jaas.memory.InMemoryConfiguration;2;javax.security.auth.login.AppConfigurationEntry[];java.util.Map<java.lang.String,javax.security.auth.login.AppConfigurationEntry[]>
+org.springframework.security.authentication.jaas.event.JaasAuthenticationSuccessEvent;1;org.springframework.security.core.Authentication
+org.springframework.security.access.expression.DenyAllPermissionEvaluator;3;org.springframework.security.core.Authentication;java.lang.Object;java.io.Serializable
+org.springframework.security.authentication.CredentialsExpiredException;1;java.lang.Throwable
+org.springframework.security.authentication.AuthenticationTrustResolverImpl;2;org.springframework.security.core.Authentication;java.lang.Class<? extends org.springframework.security.core.Authentication>
+org.springframework.security.access.annotation.Jsr250MethodSecurityMetadataSource;3;java.lang.Class<?>;java.lang.reflect.Method;java.lang.annotation.Annotation[]
+org.springframework.security.core.userdetails.UserDetailsByNameServiceWrapper;2;T;org.springframework.security.core.userdetails.UserDetailsService
+org.springframework.security.access.annotation.SecuredAnnotationSecurityMetadataSource;4;java.lang.annotation.Annotation;java.lang.Class<?>;java.lang.reflect.Method;org.springframework.security.access.annotation.AnnotationMetadataExtractor
+org.springframework.security.authentication.rcp.RemoteAuthenticationException;0
+org.springframework.security.authentication.BadCredentialsException;1;java.lang.Throwable
+org.springframework.security.authentication.event.AuthenticationFailureProviderNotFoundEvent;3;org.springframework.security.core.Authentication;java.lang.Throwable;org.springframework.security.core.AuthenticationException
+org.springframework.security.authentication.DisabledException;1;java.lang.Throwable
+org.springframework.security.access.vote.AbstractAclVoter;2;java.lang.Class<?>;MethodInvocation
+org.springframework.security.core.authority.AuthorityUtils;1;java.util.Collection<? extends org.springframework.security.core.GrantedAuthority>
+org.springframework.security.authentication.encoding.LdapShaPasswordEncoder;2;java.lang.Object;byte[]
+org.springframework.security.authentication.AccountStatusUserDetailsChecker;1;org.springframework.security.core.userdetails.UserDetails
+org.springframework.security.access.expression.method.AbstractExpressionBasedMethodConfigAttribute;1;Expression
+org.springframework.security.authentication.event.InteractiveAuthenticationSuccessEvent;2;org.springframework.security.core.Authentication;java.lang.Class<?>
+org.springframework.security.access.hierarchicalroles.NullRoleHierarchy;1;java.util.Collection<? extends org.springframework.security.core.GrantedAuthority>
+org.springframework.security.core.context.GlobalSecurityContextHolderStrategy;1;org.springframework.security.core.context.SecurityContext
+org.springframework.security.access.prepost.PreInvocationAuthorizationAdviceVoter;6;org.springframework.security.core.Authentication;java.util.Collection<org.springframework.security.access.ConfigAttribute>;java.lang.Class<?>;MethodInvocation;org.springframework.security.access.prepost.PreInvocationAuthorizationAdvice;org.springframework.security.access.ConfigAttribute
+org.springframework.security.authentication.encoding.MessageDigestPasswordEncoder;1;java.lang.Object
+org.springframework.security.core.userdetails.jdbc.JdbcDaoImpl;3;java.util.List<org.springframework.security.core.GrantedAuthority>;java.sql.ResultSet;org.springframework.security.core.userdetails.UserDetails
+org.springframework.security.core.token.Sha512DigestUtils;1;byte[]
+org.springframework.security.task.DelegatingSecurityContextAsyncTaskExecutor;4;java.util.concurrent.Callable<T>;AsyncTaskExecutor;java.lang.Runnable;org.springframework.security.core.context.SecurityContext
+org.springframework.security.access.expression.ExpressionUtils;2;EvaluationContext;Expression
+org.springframework.security.core.authority.mapping.MapBasedAttributes2GrantedAuthoritiesMapper;6;java.util.Collection<?>;java.lang.Object[];java.util.Collection<org.springframework.security.core.GrantedAuthority>;java.lang.Object;java.util.Collection<java.lang.String>;java.util.Map<?,?>
+org.springframework.security.access.AuthorizationServiceException;1;java.lang.Throwable
+org.springframework.security.access.vote.UnanimousBased;4;org.springframework.security.core.Authentication;java.util.Collection<org.springframework.security.access.ConfigAttribute>;java.lang.Object;java.util.List<org.springframework.security.access.AccessDecisionVoter<? extends java.lang.Object>>
+org.springframework.security.authentication.encoding.ShaPasswordEncoder;0
+org.springframework.security.access.AccessDeniedException;1;java.lang.Throwable
+org.springframework.security.access.annotation.Jsr250Voter;5;org.springframework.security.core.Authentication;java.util.Collection<org.springframework.security.access.ConfigAttribute>;java.lang.Object;java.lang.Class<?>;org.springframework.security.access.ConfigAttribute
+org.springframework.security.core.SpringSecurityMessageSource;0
+org.springframework.security.core.session.SessionInformation;2;java.lang.Object;java.util.Date
+org.springframework.security.access.expression.SecurityExpressionRoot;5;org.springframework.security.core.Authentication;java.lang.Object;org.springframework.security.access.PermissionEvaluator;org.springframework.security.access.hierarchicalroles.RoleHierarchy;org.springframework.security.authentication.AuthenticationTrustResolver
+org.springframework.security.concurrent.DelegatingSecurityContextExecutorService;8;java.util.concurrent.Callable<T>;T;java.util.concurrent.TimeUnit;java.lang.Runnable;java.util.Collection<java.util.concurrent.Callable<T>>;org.springframework.security.core.context.SecurityContext;java.util.Collection;java.util.concurrent.ExecutorService
+org.springframework.security.authentication.encoding.Md4PasswordEncoder;1;java.lang.Object
+org.springframework.security.task.DelegatingSecurityContextTaskExecutor;2;TaskExecutor;org.springframework.security.core.context.SecurityContext
+org.springframework.security.core.token.SecureRandomFactoryBean;1;Resource
+org.springframework.security.provisioning.MutableUser;1;org.springframework.security.core.userdetails.UserDetails
+org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler;8;EvaluationContext;ParameterNameDiscoverer;org.springframework.security.core.Authentication;java.lang.Object;MethodInvocation;org.springframework.security.access.PermissionCacheOptimizer;Expression;org.springframework.security.authentication.AuthenticationTrustResolver
+org.springframework.security.concurrent.DelegatingSecurityContextScheduledExecutorService;5;java.util.concurrent.TimeUnit;java.lang.Runnable;java.util.concurrent.Callable<V>;java.util.concurrent.ScheduledExecutorService;org.springframework.security.core.context.SecurityContext
+org.springframework.security.access.expression.AbstractSecurityExpressionHandler;6;T;org.springframework.security.core.Authentication;org.springframework.security.access.PermissionEvaluator;org.springframework.security.access.hierarchicalroles.RoleHierarchy;ApplicationContext;ExpressionParser
+org.springframework.security.authentication.LockedException;1;java.lang.Throwable
+org.springframework.security.access.prepost.PostInvocationAdviceProvider;6;org.springframework.security.core.Authentication;org.springframework.security.access.prepost.PostInvocationAuthorizationAdvice;java.util.Collection<org.springframework.security.access.ConfigAttribute>;java.lang.Object;java.lang.Class<?>;org.springframework.security.access.ConfigAttribute
+org.springframework.security.authentication.AccountStatusException;1;java.lang.Throwable
+org.springframework.security.access.hierarchicalroles.CycleInRoleHierarchyException;0
+org.springframework.security.core.parameters.AnnotationParameterNameDiscoverer;6;T;org.springframework.security.core.parameters.AnnotationParameterNameDiscoverer.ParameterNameFactory<T>;java.lang.reflect.Method;java.util.Set<java.lang.String>;java.lang.reflect.Constructor<?>;java.lang.annotation.Annotation[]
+org.springframework.security.provisioning.InMemoryUserDetailsManager;4;java.util.Properties;java.util.Collection<org.springframework.security.core.userdetails.UserDetails>;org.springframework.security.authentication.AuthenticationManager;org.springframework.security.core.userdetails.UserDetails
+org.springframework.security.access.event.AuthenticationCredentialsNotFoundEvent;4;java.lang.Object;java.util.Collection<org.springframework.security.access.ConfigAttribute>;java.lang.Throwable;org.springframework.security.authentication.AuthenticationCredentialsNotFoundException
+org.springframework.security.authentication.AbstractAuthenticationToken;2;java.util.Collection<? extends org.springframework.security.core.GrantedAuthority>;java.lang.Object
+org.springframework.security.authentication.dao.DaoAuthenticationProvider;7;java.util.Collection<? extends org.springframework.security.core.GrantedAuthority>;org.springframework.security.authentication.dao.SaltSource;java.lang.Object;org.springframework.security.core.userdetails.UserDetailsService;org.springframework.security.authentication.UsernamePasswordAuthenticationToken;org.springframework.security.core.userdetails.UserDetails;org.springframework.security.authentication.encoding.PasswordEncoder
+org.springframework.security.access.vote.RoleVoter;5;org.springframework.security.core.Authentication;java.util.Collection<org.springframework.security.access.ConfigAttribute>;java.lang.Object;java.lang.Class<?>;org.springframework.security.access.ConfigAttribute
+org.springframework.security.authentication.event.AuthenticationSuccessEvent;1;org.springframework.security.core.Authentication
+org.springframework.security.core.session.SessionCreationEvent;1;java.lang.Object
+org.springframework.security.access.prepost.PrePostAnnotationSecurityMetadataSource;4;java.lang.Class<?>;java.lang.reflect.Method;java.lang.Class<A>;org.springframework.security.access.prepost.PrePostInvocationAttributeFactory
+org.springframework.security.core.session.SessionDestroyedEvent;1;java.lang.Object
+org.springframework.security.authentication.event.AuthenticationFailureProxyUntrustedEvent;3;org.springframework.security.core.Authentication;java.lang.Throwable;org.springframework.security.core.AuthenticationException
+org.springframework.security.core.authority.mapping.NullAuthoritiesMapper;1;java.util.Collection<? extends org.springframework.security.core.GrantedAuthority>
+org.springframework.security.core.userdetails.cache.SpringCacheBasedUserCache;2;org.springframework.security.core.userdetails.UserDetails;Cache
+org.springframework.security.authentication.event.AuthenticationFailureDisabledEvent;3;org.springframework.security.core.Authentication;java.lang.Throwable;org.springframework.security.core.AuthenticationException
+org.springframework.security.authentication.encoding.Md4;1;byte[]
+org.springframework.security.authentication.TestingAuthenticationProvider;2;org.springframework.security.core.Authentication;java.lang.Class<?>
+org.springframework.security.authentication.UsernamePasswordAuthenticationToken;2;java.util.Collection<? extends org.springframework.security.core.GrantedAuthority>;java.lang.Object
+org.springframework.security.authentication.TestingAuthenticationToken;2;java.util.List<org.springframework.security.core.GrantedAuthority>;java.lang.Object
+org.springframework.security.access.expression.method.MethodSecurityExpressionRoot;2;org.springframework.security.core.Authentication;java.lang.Object
+org.springframework.security.core.SpringSecurityCoreVersion;0
+org.springframework.security.core.authority.mapping.SimpleAuthorityMapper;1;java.util.Collection<? extends org.springframework.security.core.GrantedAuthority>
+org.springframework.security.access.event.AbstractAuthorizationEvent;1;java.lang.Object
+org.springframework.security.authentication.AuthenticationCredentialsNotFoundException;1;java.lang.Throwable
+org.springframework.security.access.expression.method.ExpressionBasedAnnotationAttributeFactory;1;org.springframework.security.access.expression.method.MethodSecurityExpressionHandler
+org.springframework.security.core.context.ThreadLocalSecurityContextHolderStrategy;1;org.springframework.security.core.context.SecurityContext
+org.springframework.security.access.intercept.RunAsManagerImpl;5;org.springframework.security.core.Authentication;java.util.Collection<org.springframework.security.access.ConfigAttribute>;java.lang.Object;java.lang.Class<?>;org.springframework.security.access.ConfigAttribute
+org.springframework.security.authentication.jaas.event.JaasAuthenticationFailedEvent;2;org.springframework.security.core.Authentication;java.lang.Exception
+org.springframework.security.core.token.DefaultToken;1;java.lang.Object
+org.springframework.security.authentication.event.AuthenticationFailureExpiredEvent;3;org.springframework.security.core.Authentication;java.lang.Throwable;org.springframework.security.core.AuthenticationException
+org.springframework.security.authentication.AnonymousAuthenticationToken;2;java.util.Collection<? extends org.springframework.security.core.GrantedAuthority>;java.lang.Object
+org.springframework.security.access.annotation.Jsr250SecurityConfig;0
+org.springframework.security.access.SecurityConfig;1;java.lang.Object
+org.springframework.security.core.userdetails.memory.UserAttributeEditor;0
+org.springframework.security.concurrent.AbstractDelegatingSecurityContextSupport;3;java.util.concurrent.Callable<T>;java.lang.Runnable;org.springframework.security.core.context.SecurityContext
+org.springframework.security.authentication.jaas.DefaultJaasAuthenticationProvider;2;javax.security.auth.login.Configuration;javax.security.auth.callback.CallbackHandler
+org.springframework.security.authentication.AccountExpiredException;1;java.lang.Throwable
+org.springframework.security.core.session.SessionRegistryImpl;2;org.springframework.security.core.session.SessionDestroyedEvent;java.lang.Object
+org.springframework.security.authentication.encoding.BaseDigestPasswordEncoder;0
+org.springframework.security.access.expression.method.PostInvocationExpressionAttribute;1;Expression
+org.springframework.security.access.expression.method.ExpressionBasedPreInvocationAdvice;5;EvaluationContext;org.springframework.security.core.Authentication;org.springframework.security.access.prepost.PreInvocationAttribute;MethodInvocation;org.springframework.security.access.expression.method.MethodSecurityExpressionHandler
+org.springframework.security.access.intercept.aspectj.AspectJMethodSecurityInterceptor;2;JoinPoint;org.springframework.security.access.intercept.aspectj.AspectJCallback
+org.springframework.security.authentication.rcp.RemoteAuthenticationProvider;3;org.springframework.security.authentication.rcp.RemoteAuthenticationManager;org.springframework.security.core.Authentication;java.lang.Class<?>
+org.springframework.security.authentication.jaas.JaasPasswordCallbackHandler;2;org.springframework.security.core.Authentication;javax.security.auth.callback.Callback
+org.springframework.security.util.FieldUtils;2;java.lang.Object;java.lang.Class<?>
+org.springframework.security.access.event.LoggerListener;2;java.lang.Object;org.springframework.security.access.event.AbstractAuthorizationEvent
+org.springframework.security.authentication.RememberMeAuthenticationProvider;3;MessageSource;org.springframework.security.core.Authentication;java.lang.Class<?>
+org.springframework.security.access.expression.method.ExpressionBasedPostInvocationAdvice;5;org.springframework.security.core.Authentication;java.lang.Object;org.springframework.security.access.prepost.PostInvocationAttribute;MethodInvocation;org.springframework.security.access.expression.method.MethodSecurityExpressionHandler
+org.springframework.security.authentication.RememberMeAuthenticationToken;2;java.util.Collection<? extends org.springframework.security.core.GrantedAuthority>;java.lang.Object
+org.springframework.security.authentication.event.LoggerListener;2;org.springframework.security.core.Authentication;org.springframework.security.authentication.event.AbstractAuthenticationEvent
+org.springframework.security.authentication.jaas.JaasAuthenticationToken;3;java.util.List<org.springframework.security.core.GrantedAuthority>;java.lang.Object;javax.security.auth.login.LoginContext
+org.springframework.security.access.intercept.NullRunAsManager;5;org.springframework.security.core.Authentication;java.util.Collection<org.springframework.security.access.ConfigAttribute>;java.lang.Object;java.lang.Class<?>;org.springframework.security.access.ConfigAttribute
+org.springframework.security.access.expression.method.MethodSecurityEvaluationContext;3;ParameterNameDiscoverer;org.springframework.security.core.Authentication;MethodInvocation
+org.springframework.security.access.intercept.aspectj.MethodInvocationAdapter;3;java.lang.Class<?>[];java.lang.Class<?>;JoinPoint
+org.springframework.security.access.event.PublicInvocationEvent;1;java.lang.Object
+org.springframework.security.core.userdetails.cache.EhCacheBasedUserCache;2;org.springframework.security.core.userdetails.UserDetails;Ehcache
+org.springframework.security.authentication.event.AuthenticationFailureCredentialsExpiredEvent;3;org.springframework.security.core.Authentication;java.lang.Throwable;org.springframework.security.core.AuthenticationException
+org.springframework.security.core.userdetails.cache.NullUserCache;1;org.springframework.security.core.userdetails.UserDetails
+org.springframework.security.access.vote.AbstractAccessDecisionManager;4;MessageSource;java.util.List<org.springframework.security.access.AccessDecisionVoter<? extends java.lang.Object>>;java.lang.Class<?>;org.springframework.security.access.ConfigAttribute
+org.springframework.security.authentication.event.AuthenticationFailureBadCredentialsEvent;3;org.springframework.security.core.Authentication;java.lang.Throwable;org.springframework.security.core.AuthenticationException
+org.springframework.security.util.MethodInvocationUtils;4;java.lang.Class<?>[];java.lang.Object[];java.lang.Object;java.lang.Class<?>
+org.springframework.security.authentication.dao.ReflectionSaltSource;1;org.springframework.security.core.userdetails.UserDetails
+org.springframework.security.authentication.event.AbstractAuthenticationFailureEvent;3;org.springframework.security.core.Authentication;java.lang.Throwable;org.springframework.security.core.AuthenticationException
+org.springframework.security.authentication.DefaultAuthenticationEventPublisher;6;ApplicationEventPublisher;org.springframework.security.core.Authentication;java.util.Properties;java.lang.Throwable;java.lang.Class<? extends org.springframework.security.authentication.event.AbstractAuthenticationFailureEvent>;org.springframework.security.core.AuthenticationException
+org.springframework.security.authentication.InsufficientAuthenticationException;1;java.lang.Throwable
+org.springframework.security.core.userdetails.memory.UserAttribute;3;java.util.List<org.springframework.security.core.GrantedAuthority>;org.springframework.security.core.GrantedAuthority;java.util.List<java.lang.String>
+org.springframework.security.authentication.encoding.PasswordEncoderUtils;0
+org.springframework.security.access.intercept.InterceptorStatusToken;3;java.lang.Object;java.util.Collection<org.springframework.security.access.ConfigAttribute>;org.springframework.security.core.context.SecurityContext
+org.springframework.security.authentication.jaas.JaasNameCallbackHandler;2;org.springframework.security.core.Authentication;javax.security.auth.callback.Callback
+org.springframework.security.access.annotation.SecuredAnnotationMetadataExtractor;1;org.springframework.security.access.annotation.Secured
+org.springframework.security.access.method.AbstractFallbackMethodSecurityMetadataSource;2;java.lang.Class<?>;java.lang.reflect.Method
+org.springframework.security.access.intercept.MethodInvocationPrivilegeEvaluator;3;org.springframework.security.access.intercept.AbstractSecurityInterceptor;org.springframework.security.core.Authentication;MethodInvocation
+org.springframework.security.access.hierarchicalroles.RoleHierarchyAuthoritiesMapper;2;java.util.Collection<? extends org.springframework.security.core.GrantedAuthority>;org.springframework.security.access.hierarchicalroles.RoleHierarchy
+org.springframework.security.core.token.KeyBasedPersistenceTokenService;2;java.security.SecureRandom;java.lang.Integer
+org.springframework.security.access.vote.AffirmativeBased;4;org.springframework.security.core.Authentication;java.util.Collection<org.springframework.security.access.ConfigAttribute>;java.lang.Object;java.util.List<org.springframework.security.access.AccessDecisionVoter<? extends java.lang.Object>>
+org.springframework.security.access.intercept.aopalliance.MethodSecurityInterceptor;2;MethodInvocation;org.springframework.security.access.method.MethodSecurityMetadataSource
+org.springframework.security.core.AuthenticationException;1;java.lang.Throwable
+org.springframework.security.access.expression.method.PreInvocationExpressionAttribute;1;Expression
+org.springframework.security.util.SimpleMethodInvocation;2;java.lang.Object;java.lang.reflect.Method
+org.springframework.security.core.authority.SimpleGrantedAuthority;1;java.lang.Object
+org.springframework.security.authentication.encoding.Md5PasswordEncoder;0
+org.springframework.security.concurrent.DelegatingSecurityContextExecutor;3;java.lang.Runnable;java.util.concurrent.Executor;org.springframework.security.core.context.SecurityContext
+org.springframework.security.access.vote.ConsensusBased;4;org.springframework.security.core.Authentication;java.util.Collection<org.springframework.security.access.ConfigAttribute>;java.lang.Object;java.util.List<org.springframework.security.access.AccessDecisionVoter<? extends java.lang.Object>>
+org.springframework.security.access.vote.RoleHierarchyVoter;2;org.springframework.security.core.Authentication;org.springframework.security.access.hierarchicalroles.RoleHierarchy
+org.springframework.security.access.event.AuthorizedEvent;3;org.springframework.security.core.Authentication;java.util.Collection<org.springframework.security.access.ConfigAttribute>;java.lang.Object
+org.springframework.security.provisioning.JdbcUserDetailsManager;9;java.util.List<org.springframework.security.core.GrantedAuthority>;java.util.Collection<? extends org.springframework.security.core.GrantedAuthority>;org.springframework.security.core.Authentication;java.sql.ResultSet;org.springframework.security.core.GrantedAuthority;org.springframework.security.authentication.AuthenticationManager;org.springframework.security.core.userdetails.UserDetails;java.sql.PreparedStatement;org.springframework.security.core.userdetails.UserCache
+org.springframework.security.core.parameters.DefaultSecurityParameterNameDiscoverer;1;java.util.List<? extends org.springframework.security.core.parameters.ParameterNameDiscoverer>
+org.springframework.security.authentication.InternalAuthenticationServiceException;1;java.lang.Throwable
+org.springframework.security.access.vote.AuthenticatedVoter;6;org.springframework.security.core.Authentication;java.util.Collection<org.springframework.security.access.ConfigAttribute>;java.lang.Object;java.lang.Class<?>;org.springframework.security.access.ConfigAttribute;org.springframework.security.authentication.AuthenticationTrustResolver
+org.springframework.security.core.context.SecurityContextHolder;1;org.springframework.security.core.context.SecurityContext
+org.springframework.security.core.authority.mapping.SimpleMappableAttributesRetriever;1;java.util.Set<java.lang.String>
+org.springframework.security.authentication.AnonymousAuthenticationProvider;3;MessageSource;org.springframework.security.core.Authentication;java.lang.Class<?>
+org.springframework.security.authentication.jaas.JaasAuthenticationProvider;7;java.util.Collection<? extends org.springframework.security.core.GrantedAuthority>;Resource;java.lang.Object;org.springframework.security.authentication.UsernamePasswordAuthenticationToken;java.lang.Throwable;org.springframework.security.core.AuthenticationException;javax.security.auth.callback.CallbackHandler
+org.springframework.security.core.context.InheritableThreadLocalSecurityContextHolderStrategy;1;org.springframework.security.core.context.SecurityContext
+org.springframework.security.authentication.AuthenticationServiceException;1;java.lang.Throwable
+org.springframework.security.scheduling.DelegatingSecurityContextSchedulingTaskExecutor;2;SchedulingTaskExecutor;org.springframework.security.core.context.SecurityContext
