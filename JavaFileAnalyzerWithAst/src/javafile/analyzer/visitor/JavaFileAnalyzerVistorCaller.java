@@ -44,12 +44,13 @@ public class JavaFileAnalyzerVistorCaller {
 		// String aSourcePath = args[0];
 
 		
-		String systemName = "elasticsearch-1.7.1";
+		String systemName = "elasticsearch-1.7.1"; 
 		 
 		String aSourcePath="/Users/gamyot/Google Drive/Été 2015/Stage 2015/resources/system Search/newSystems/"+systemName+"/src";
 		//String aSourcePath="/Users/gamyot/Documents/workspace/TestClasses/src";
 		//String aSourcePath="/Users/gamyot/Desktop/youssefTest/src";
 		 
+		
 		// using librairies? put the paths here
 		// String aClassPath=args[1];
 		String aClassPath = "";
@@ -75,7 +76,11 @@ public class JavaFileAnalyzerVistorCaller {
 				System.out.println(a.toString());
 			}
 			visitor.resolveClassDependencies();
-			// get list of results and print it in csv file
+			
+			/*
+			 * collect statistical information about each class on the system
+			 */
+			// get list of statistical results and print it in csv file
 			Map<String,String> resultsMap = visitor.getResultsMap();
 			
 			String title = "ClassId;Dependencies;tryStatement;ifStatement;forStatement;enhancedForStatement/* foreach */;doStatement;"
@@ -83,20 +88,20 @@ public class JavaFileAnalyzerVistorCaller {
 					+ "FieldDeclaration;synchronizedStatement;methodDeclaration;privateMethod;publicMethod;"
 					+ "staticMethod;anonymousClassDeclaration;nbMemberClasses;nbStringParams;nbPrimitiveParams;"
 					+ "nbOtherTypesParams;nbOtherTypesParamsLibrary;parameterizedTypeParam;arrayTypeParam;javaImports;trowStatement;"
-					+ "NestedBlocks;MaxDepth";
+					+ "NestedBlocks;MaxDepth;importExternal";
 			
 			CsvManager.writeSimpleMapInCSV(resultsMap,outputBasePath + systemName + "_Stats.csv", title,  true);
 
-			// resolveDependencie and do smth dirty
-			
+			/*
+			 * to know the dependencies of every class on the system 
+			 */
+			// resolveDependencie and print do smth dirty
 			Map<String, Set<String>> mapOfFinalDependencies = visitor.resolveClassDependencies();
 
 			Map<String, List<String>> mapToSave = new HashMap<String, List<String>>();
-			for (Entry<String, Set<String>> entry : mapOfFinalDependencies
-					.entrySet()) {
+			for (Entry<String, Set<String>> entry : mapOfFinalDependencies.entrySet()) {
 				mapToSave.put(entry.getKey(), new ArrayList<String>());
-				mapToSave.get(entry.getKey()).add(
-						String.valueOf(entry.getValue().size()));
+				mapToSave.get(entry.getKey()).add(String.valueOf(entry.getValue().size()));
 				mapToSave.get(entry.getKey()).addAll(entry.getValue());
 
 			}
@@ -104,13 +109,15 @@ public class JavaFileAnalyzerVistorCaller {
 					+ systemName + "_ClassDpdcies.csv", "", false);
 			 
 			
-			//print imports
+			/*
+			 * to know what imports are used on the project 
+			 * */
+			//get and print the imports
+			title = "Java imports";	
+			List<String> listToSave = visitor.getImporList();
 			
-				title = "classId;Java imports";	
-				mapToSave = visitor.getImportMap();
-				
-				CsvManager.writeDynamicMapInCSV(mapToSave, outputBasePath + systemName + "_SImports.csv", title, true);
-			
+			CsvManager.writeListInCSV(listToSave, title, outputBasePath + systemName + "_SImports.csv", true);
+		
 			
 			
 			

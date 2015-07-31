@@ -33,6 +33,7 @@ import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Set;
 
+import org.eclipse.core.internal.jobs.Counter;
 import org.eclipse.jdt.core.dom.ASTNode;
 import org.eclipse.jdt.core.dom.AbstractTypeDeclaration;
 import org.eclipse.jdt.core.dom.AnnotationTypeDeclaration;
@@ -148,15 +149,10 @@ public class JavaFileAnalyzerVisitor extends ExtendedASTVisitor {
 		FieldDeclaration, synchronizedStatement, methodDeclaration, privateMethod, publicMethod,
 		staticMethod, anonymousClassDeclaration, nbMemberClasses, nbStringParams, nbPrimitiveParams,
 		nbOtherTypesParams, nbOtherTypesParamsLibrary,parameterizedTypeParam, arrayTypeParam,javaImports, throwStatement,
-		nestedBlock, maxDepth/*, easyCondition, mediumCondition, dificultCondition,
-		methodDatabaseAcces, methodNetworkAcces, methodFileSystemAcces,
-		attributeDatabaseAcces, attributeNetworkAcces, attributeFileSystemAcces,
+		nestedBlock, maxDepth, maybeUsesExternal
+		/* databaseImport, networkImport, ioImport, 
+		easyCondition, mediumCondition, dificultCondition,
 		testCases*/
-
-		// further analysis
-		// <String>
-		// int typeParameterCounter; // (number of different types of parameters
-		// not in jdk
 
 	}
 
@@ -174,7 +170,7 @@ public class JavaFileAnalyzerVisitor extends ExtendedASTVisitor {
 	private Set<String> importSet = new HashSet<String>();
 	
 	//ImportMap
-	private Map<String,List<String>> importMap =new HashMap<String,List<String>>();
+	//private Map<String,List<String>> importMap =new HashMap<String,List<String>>();
 	
 	// id of the class bein visited
 	private String currentClassId = "";
@@ -297,8 +293,7 @@ public class JavaFileAnalyzerVisitor extends ExtendedASTVisitor {
 	
 	private void addDependnciesToClassResultMap(String name, Set<String> dependencies){
 		Integer dependenciesCount = dependencies.size();
-		String tempString = dependenciesCount.toString() +
-				";" + resultsMap.get(name);
+		String tempString = dependenciesCount.toString() +";" + resultsMap.get(name);
 		resultsMap.put(name, tempString);
 		
 	}
@@ -319,6 +314,8 @@ public class JavaFileAnalyzerVisitor extends ExtendedASTVisitor {
 			Set<String> classDependenciesSet =classDependenciesEntry.getValue();
 			addDependnciesToClassResultMap(currentClassName, classDependenciesSet);
 			}
+		
+
 		return resolvedDependencies;
 	}
 
@@ -377,20 +374,22 @@ public class JavaFileAnalyzerVisitor extends ExtendedASTVisitor {
 		return finalMap;
 	}
 	
-
-	public Map<String,List<String>> getImportMap() {
-		return importMap;
+	public List<String> getImporList() {
+		List<String> output = new ArrayList<String>();
+		output.addAll(importSet);
+		return output;
 	}
 	
+	/*
 	/**
 	 * saves the current class imports into the 
-	 */
+	 
 	private void saveImportsInList() {
 		List<String> importList = new ArrayList<String>();
-			importList.addAll(importSet);	
+		importList.addAll(importSet);	
 		importMap.put(currentClassId, importList);
 	}
-	
+	*/
 	
 	@Override
 	public void preVisit(ASTNode node) {
@@ -625,6 +624,10 @@ public class JavaFileAnalyzerVisitor extends ExtendedASTVisitor {
 		//filtre (on veux juste les .java)
 		if(importName.contains("java."))
 			importSet.add(importName);	
+		if(importName.contains("java.io") || importName.contains("java.nio")
+			||importName.contains("java.net")||importName.contains("java.sql"))
+			incrementCounter(CounterEnum.maybeUsesExternal);
+
 		return super.visit(node);
 	}
 
@@ -935,6 +938,10 @@ public class JavaFileAnalyzerVisitor extends ExtendedASTVisitor {
 		return super.visit(node);
 	}
 
+	/*
+	 * Type declaration represents a class or a interface declaration
+	 * We start counting here if its a class
+	 * */
 	@Override
 	public boolean visit(TypeDeclaration node) {
 		// si ce n'est pas une interface, c'est une classe
@@ -1451,14 +1458,18 @@ public class JavaFileAnalyzerVisitor extends ExtendedASTVisitor {
 		super.endVisit(node);
 	}
 
+	/*
+	 * Type declaration represents a class or a interface declaration
+	 * We stop counting here and save the class results into the resultMap
+	 * */
 	@Override
 	public void endVisit(TypeDeclaration node) {
 		// Debug
 		if (!node.isInterface()) {
-
+			//stop counting if this is not a member class
 			if (!node.isMemberTypeDeclaration()) {
-				// ecriture et reinitialisation
-				// before, compute totalBtanches
+
+				//compute totalBtanches
 				int nbTotalBranches = this.countersMap
 						.get(CounterEnum.doStatement)
 						+ this.countersMap.get(CounterEnum.catchClause)
@@ -1468,14 +1479,18 @@ public class JavaFileAnalyzerVisitor extends ExtendedASTVisitor {
 						+ this.countersMap.get(CounterEnum.forStatement)
 						+ this.countersMap.get(CounterEnum.enhancedForStatement);
 				this.countersMap.put(CounterEnum.totalBranches, nbTotalBranches);
-
+				
+				//computes importExternal 
+				if (countersMap.get(CounterEnum.maybeUsesExternal) >= 1)
+					countersMap.put(CounterEnum.maybeUsesExternal,	1);
+				
+				//save the counters
 				printClassInfos();
-				//save the importSet as a list into a csvFile
-				saveImportsInList();
+	
 				//initialize all the counters at 0
 				initialiseEnumMap();
 				//clears the importSet
-				importSet =new HashSet<String>();
+				//importSet =new HashSet<String>();
 				
 				// clear currentClassId
 				currentClassId = "";
