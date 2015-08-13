@@ -149,7 +149,7 @@ public class JavaFileAnalyzerVisitor extends ExtendedASTVisitor {
 		FieldDeclaration, synchronizedStatement, methodDeclaration, privateMethod, publicMethod,
 		staticMethod, anonymousClassDeclaration, nbMemberClasses, nbStringParams, nbPrimitiveParams,
 		nbOtherTypesParams, nbOtherTypesParamsLibrary,parameterizedTypeParam, arrayTypeParam,javaImports, throwStatement,
-		nestedBlock, maxDepth, maybeUsesExternal
+		nestedBlock, maxDepth, maybeUsesExternal, madumTransformers
 		/* databaseImport, networkImport, ioImport, 
 		easyCondition, mediumCondition, dificultCondition,
 		testCases*/
@@ -177,11 +177,16 @@ public class JavaFileAnalyzerVisitor extends ExtendedASTVisitor {
 	
 	//block embrication counter
 	private int currentDepthLevel; 
-	//private boolean intoNestedBlock;
 	private boolean isNested ;
 	
+	//madum stats
+	//map<field,List<method>>
+	private Map<String,HashSet<String>> mapOfTransformersDirectFieldAccess;
+	private Map<String,String> projectTransformersByClass = new HashMap<String, String>();
+	private String currentMethodSignature = "";
+	private boolean currentMethodIsStatic;
 	
-
+	
 	public JavaFileAnalyzerVisitor() {
 		initialiseEnumMap();
 	}
@@ -196,7 +201,9 @@ public class JavaFileAnalyzerVisitor extends ExtendedASTVisitor {
 		this.currentClassId = node.resolveBinding().getQualifiedName();
 		// Initialize the dependencies list
 		dependenciesMap.put(currentClassId, new HashSet<String>());
-		
+		//initialize the madum stats
+		mapOfTransformersDirectFieldAccess=new HashMap<String, HashSet<String>>();
+		currentMethodIsStatic = false;
 		
 	}
 
@@ -325,7 +332,15 @@ public class JavaFileAnalyzerVisitor extends ExtendedASTVisitor {
 	public Map<String,String> getResultsMap() {
 		return this.resultsMap;
 	}
-
+	
+	/**
+	 * 
+	 * @return
+	 */
+	public Map<String, String> getMadumTransformers() {
+		return projectTransformersByClass;
+	}
+	
 	/**
 	 * Author: Aminata
 	 * @param mapOfClasses
@@ -457,9 +472,129 @@ public class JavaFileAnalyzerVisitor extends ExtendedASTVisitor {
 		return super.visit(node);
 	}
 
+	/**
+	 * used by the Madum Transformer counter
+	 * @param nodeName
+	 * @param binding
+	 */
+	private void checkFieldAccess(String nodeName, IBinding binding) {
+
+		if (binding != null && binding instanceof IVariableBinding) {
+			final IVariableBinding varBinding = (IVariableBinding) binding;
+
+			if (varBinding.isField()) {
+				// if(varBinding.getModifiers())===if field is constant, don't
+				// take it into account
+				// if it is only static I don't know :-)
+				System.out.println("It is a field access by  " + nodeName);
+				String fieldName = varBinding.getName();
+
+				int fieldVisibility = varBinding.getModifiers();
+				if (!(Modifier.isFinal(fieldVisibility) && Modifier.isStatic(fieldVisibility))) {
+					// it is not a constant
+					String fieldType = varBinding.getType().getQualifiedName();
+					System.out.println(" Name= " + fieldName + " Type="+ fieldType);
+					
+					if (varBinding.getDeclaringClass() != null) {
+						ITypeBinding typeBinding = varBinding.getDeclaringClass();
+						// to handle parameterized type LinkedList<E>
+						if (typeBinding.isParameterizedType()) {
+							typeBinding = typeBinding.getErasure();
+						}
+
+						String declaringClassId = typeBinding.getQualifiedName();
+						
+						
+						// varBinding.
+						System.out.println("Declaring class= "+ declaringClassId );
+						if (declaringClassId.equals(currentClassId)) {
+								if (nodeName.equals("Assignment")) {
+									incrementCounter(CounterEnum.madumTransformers);
+									if (!this.mapOfTransformersDirectFieldAccess.containsKey(fieldName)) {
+										this.mapOfTransformersDirectFieldAccess.put(
+												fieldName,new HashSet<String>());
+									}
+									this.mapOfTransformersDirectFieldAccess.get(fieldName).add(
+											this.currentMethodSignature);
+								}
+						}
+					}
+				}
+			}
+		}
+
+	}
+	
+	/**
+	 * used by the madum Transformer counter
+	 * @param anExpression
+	 * @return
+	 */
+	public static IBinding getExpressionTypeBinding(final Expression anExpression) {
+
+			IBinding binding = null;
+
+			if (anExpression instanceof ArrayAccess) {
+				final ArrayAccess arrayAccess = (ArrayAccess) anExpression;
+				return getExpressionTypeBinding(arrayAccess.getArray());
+
+			}
+
+			if (anExpression instanceof FieldAccess) {
+				final FieldAccess fieldAccess = (FieldAccess) anExpression;
+				return getExpressionTypeBinding(fieldAccess.getName());
+			}
+
+			if (anExpression instanceof ParenthesizedExpression) {
+				final ParenthesizedExpression parenthesizedExpression =
+					(ParenthesizedExpression) anExpression;
+
+				return getExpressionTypeBinding(parenthesizedExpression.getExpression());
+			}
+
+			if (anExpression instanceof CastExpression) {
+				final CastExpression castExpression = (CastExpression) anExpression;
+
+				return getExpressionTypeBinding(castExpression.getExpression());
+			}
+
+			if (anExpression instanceof QualifiedName
+					|| anExpression instanceof SimpleName) {
+
+				if (anExpression instanceof QualifiedName) {
+					final QualifiedName qualifiedName =
+						(QualifiedName) anExpression;
+					binding = qualifiedName.resolveBinding();
+				}
+				if (anExpression instanceof SimpleName) {
+					final SimpleName simpleName = (SimpleName) anExpression;
+					binding = simpleName.resolveBinding();
+				}
+			}
+			return binding;
+		}
+	
 	@Override
 	public boolean visit(Assignment node) {
 		// TODO Auto-generated method stub
+		
+		//MADUM de base
+			
+		//if
+		//Map<String,List<String>> fieldMethodMap;
+		//checkFieldAccess(node.b)
+		
+		
+		if (!currentMethodSignature.equals("") && this.currentClassId != null && !currentMethodIsStatic) {
+			//debug
+			System.out.print(" Assignement " + node.toString());
+			System.out.print("node.getRightHandSide()" + node.getRightHandSide().toString() + " operator"+ node.getOperator().toString());
+			System.out.println("node.getLeftHandSide()"+ node.getLeftHandSide());
+			//
+			
+			checkFieldAccess("Assignment", getExpressionTypeBinding(node.getLeftHandSide()));
+		}
+
 		return super.visit(node);
 	}
 
@@ -700,7 +835,20 @@ public class JavaFileAnalyzerVisitor extends ExtendedASTVisitor {
 	@Override
 	public boolean visit(MethodDeclaration node) {
 		
+		
+		//to cout the nestd blocks
 		isNested = false;
+		
+		//to count the madumTransformeurs
+		//getThe method signature
+		String nameMethod=node.getName().toString();
+		currentMethodIsStatic = Modifier.isStatic((node.getModifiers()));
+		currentMethodSignature =nameMethod+"(";
+		List<SingleVariableDeclaration> parameterList = node.parameters();
+		for(SingleVariableDeclaration param : parameterList)
+			currentMethodSignature= currentMethodSignature+param.getType().resolveBinding().getQualifiedName() + ",";
+		currentMethodSignature= currentMethodSignature+ ")";
+		
 		
 		// method counter
 		incrementCounter(CounterEnum.methodDeclaration);
@@ -750,6 +898,9 @@ public class JavaFileAnalyzerVisitor extends ExtendedASTVisitor {
 			}
 		}
 
+		
+		
+		
 		return super.visit(node);
 	}
 
@@ -1274,7 +1425,9 @@ public class JavaFileAnalyzerVisitor extends ExtendedASTVisitor {
 
 	@Override
 	public void endVisit(MethodDeclaration node) {
-		// TODO Auto-generated method stub
+		//reset the method name
+		currentMethodSignature = "";
+		currentMethodIsStatic = false;
 		super.endVisit(node);
 	}
 
@@ -1482,7 +1635,26 @@ public class JavaFileAnalyzerVisitor extends ExtendedASTVisitor {
 				
 				//computes importExternal 
 				if (countersMap.get(CounterEnum.maybeUsesExternal) >= 1)
-					countersMap.put(CounterEnum.maybeUsesExternal,	1);
+					countersMap.put(CounterEnum.maybeUsesExternal,1);
+				
+				//compute the Madum Transformers
+				Set<Entry<String, HashSet<String>>> entrySet=mapOfTransformersDirectFieldAccess.entrySet();
+				Set<String> transformerSet = new HashSet<String>();
+				
+				StringBuilder fieldAndTransformerCounter = new StringBuilder();
+				for(Entry<String, HashSet<String>> entry : entrySet){
+					//save the data on a map  (projectTransformersByClass)
+					fieldAndTransformerCounter.append("["+entry.getKey()+"=");
+					fieldAndTransformerCounter.append(Integer.toString(entry.getValue().size())+"];");
+					for (String method :entry.getValue())
+						transformerSet.add(method);	
+				}
+				projectTransformersByClass.put(currentClassId, fieldAndTransformerCounter.toString());
+				//count the uniques transformers
+				for(String transformer: transformerSet) 
+					incrementCounter(CounterEnum.madumTransformers);
+				
+				
 				
 				//save the counters
 				printClassInfos();
@@ -1552,5 +1724,6 @@ public class JavaFileAnalyzerVisitor extends ExtendedASTVisitor {
 		// TODO Auto-generated method stub
 		super.endVisit(node);
 	}
+
 
 }
